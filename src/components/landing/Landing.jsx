@@ -7,7 +7,6 @@ const Landing = () => {
       <div className={classes.welcomeMessage}>
         <p className={classes.landingHello}>Yes, this is a react boilerplate!</p>
         <p className={classes.landingName}>This is setup <span className={classes.name}>REALLY WELL!</span>.</p>
-        <p className={classes.landingContent}>Scroll down to see some more...</p>
       </div>
     </div>
   )

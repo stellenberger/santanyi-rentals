@@ -1,8 +1,5 @@
 import classes from './About.module.scss';
 import React from 'react'
-import {
-  Steph
-} from '../../media/index.jsx'
 
 export default function About() {
   return (
