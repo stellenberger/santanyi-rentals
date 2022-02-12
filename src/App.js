@@ -8,7 +8,7 @@ import {
 } from './components'
 
 import { 
-  ReactLogo
+  CalaLlombards
 } from './media'
 
 import ReactGa from 'react-ga'
@@ -16,7 +16,7 @@ import ReactGa from 'react-ga'
 function App() {
   const [background, setBackground] = useState(null)
   const backgroundHeroImage = {
-    backgroundImage: `url(${ReactLogo})`,
+    backgroundImage: `url(${CalaLlombards})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
   }
