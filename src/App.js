@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import classes from './App.module.scss';
 import { 
-  TopNavigation, 
-  Landing, 
-  About, 
+  TopNavigation,
   Footer,
 } from './components'
-
 import { 
-  CalaLlombards
+  Landing, 
+  About, 
+} from './pages'
+import { 
+  CalaLlombards,
 } from './media'
 
 import ReactGa from 'react-ga'
