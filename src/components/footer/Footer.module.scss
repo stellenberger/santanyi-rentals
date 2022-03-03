@@ -1,0 +1,13 @@
+@import '../../utils/variables';
+
+.footerContainer {
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  bottom: 0;
+  .footerContent {
+    width: $normal-component-width;
+    margin: auto;
+  }
+}

@@ -5,6 +5,7 @@ import {
   TopNavigation, 
   Landing, 
   About, 
+  Footer,
 } from './components'
 
 import { 
@@ -53,11 +54,12 @@ function App() {
   return (
     <div className={classes.App} style={background}>
       <BrowserRouter>
-      <TopNavigation changeColor={changeColor} backgroundHeroImage={backgroundHeroImage} />
+      <TopNavigation />
         <Routes>
           <Route exact path='/' element={<Landing/>} />
           <Route exact path='/about' element={<About/>} />
         </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
