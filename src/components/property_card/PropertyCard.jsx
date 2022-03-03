@@ -4,7 +4,8 @@ import {
   WhiteMail,
   WhitePhone,
 } from '../../media'
-import { CarouselProvider, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 
 export default function PropertyCard({ images }) {
   const [currentImage, setCurrentImage] = useState(null)
@@ -21,13 +22,14 @@ export default function PropertyCard({ images }) {
           totalSlides={images.length}
           currentSlide={0}
         >
-          <Slider>
-            { images && images.map(img => {
-              return <Slide index={images.indexOf(img)}>
-                <img src={img} alt="a mallorcan house" />
-              </Slide>
-            })}
-          </Slider>
+        <Slider>
+          { images && images.map(img => {
+            return (<Slide index={images.indexOf(img)}>
+              <img src={img} alt="a mallorcan house" />
+            </Slide>)
+          })}
+        </Slider>
+        <DotGroup className={classes.dotGroup} />
         <ButtonBack className={classes.buttonBack}><i class={classes.left} /></ButtonBack>
         <ButtonNext className={classes.buttonNext}><i class={classes.right} /></ButtonNext>
       </CarouselProvider>
