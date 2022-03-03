@@ -5,8 +5,18 @@
   height: 250px;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 0px 10px 3px black;
+  border-radius: 3px;
   img {
     width: 400px;
+  }
+  .topBanner {
+    height: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(black, 0.7);
+    position: absolute;
+    z-index: 1;
   }
   .dotGroup {
     text-align: center;

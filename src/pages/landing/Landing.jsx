@@ -2,7 +2,9 @@ import React from 'react'
 import classes from './Landing.module.scss';
 import { PropertyCard } from '../../components'
 import { 
-  SEstadorsPropertyPictures
+  SEstadorsPropertyPictures,
+  CanTiuPropertyPictures,
+  CanSabaterPropertyPictures,
 } from '../../houses';
 
 const Landing = () => {
@@ -10,7 +12,11 @@ const Landing = () => {
   return (
     <div className={classes.landingContainer}>
       <p className={classes.landingTitle}>Properties</p>
-      <PropertyCard images={SEstadorsPropertyPictures} />
+      <div className={classes.propertyGrid}>
+        <PropertyCard images={SEstadorsPropertyPictures} propertyName={'Casa S\'Estadors'} />
+        <PropertyCard images={CanTiuPropertyPictures} propertyName={'Casa Can Tiu'} />
+        <PropertyCard images={CanSabaterPropertyPictures} propertyName={'Casa Can Sabater'} />
+      </div>
     </div>
   )
 }

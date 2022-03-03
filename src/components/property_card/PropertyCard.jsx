@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import classes from './PropertyCard.module.scss';
 import { 
   WhiteMail,
@@ -7,15 +7,13 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 
-export default function PropertyCard({ images }) {
-  const [currentImage, setCurrentImage] = useState(null)
-
-  useEffect(() => {
-    setCurrentImage(images[0])
-  }, [])
+export default function PropertyCard({ images, propertyName }) {
 
   return (
     <div className={classes.propertyCardContainer}>
+      <div className={classes.topBanner}>
+        { propertyName }
+      </div>
       <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={150}
