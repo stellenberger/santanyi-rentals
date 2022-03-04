@@ -1,0 +1,33 @@
+@import '../../utils/variables';
+
+.footerContainer {
+  background-color: rgba(0,0,0,0.8);
+  border-top: 3px solid black;
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  bottom: 0;
+  .footerContent {
+    width: $normal-component-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+      display: flex;
+      justify-items: center;
+      img {
+        height: 30px;
+      }
+      a {
+        margin: auto 0 auto 40px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

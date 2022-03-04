@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import classes from './App.module.scss';
 import { 
-  TopNavigation, 
+  TopNavigation,
+  Footer,
+} from './components'
+import { 
   Landing, 
   About, 
-} from './components'
-
+} from './pages'
 import { 
-  CalaLlombards
+  CalaLlombards,
 } from './media'
 
 import ReactGa from 'react-ga'
@@ -18,7 +20,7 @@ function App() {
   const backgroundHeroImage = {
     backgroundImage: `url(${CalaLlombards})`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
   }
 
   const backgroundColor = {
@@ -53,11 +55,12 @@ function App() {
   return (
     <div className={classes.App} style={background}>
       <BrowserRouter>
-      <TopNavigation changeColor={changeColor} backgroundHeroImage={backgroundHeroImage} />
+      <TopNavigation />
         <Routes>
           <Route exact path='/' element={<Landing/>} />
           <Route exact path='/about' element={<About/>} />
         </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );

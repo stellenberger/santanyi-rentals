@@ -1,6 +1,10 @@
+@import './utils/variables';
+
 .App {
   background-color: rgba($color: #080935, $alpha: 1);
   color: white;
+  height: 100vh;
+  overflow: hidden;
   .left {
     width: 10vw;
   }

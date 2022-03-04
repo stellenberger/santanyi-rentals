@@ -1,25 +1,29 @@
-.navbarContent {
-  min-height: 10vh;
-  margin: auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @media screen and (max-width: 786px) {
-    display: flex;
-    margin: auto;
-    width: 100%;
+@import '../../utils/variables';
+
+.navbar {
+  background-color: rgba(0,0,0, 0.8);
+  border-bottom: 3px solid black;
+  h1 {
+    font-family: $site-font;
+    font-size: 50px;
   }
-}
-
-.logoContainer {
-  z-index: 30;
-  @media screen and (max-width: 786px) {
-    display: flex;
-    justify-content: center;
+  .navbarContent {
+    min-height: 15vh;
+    width: $normal-component-width;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 786px) {
+      display: flex;
+      margin: auto;
+      width: 100%;
+    }
   }
-}
-
-
-
+  .item {
+    font-size: 20px;
+    &:hover {
+      border-bottom: 2px solid white;
+    }
+  }
+}  
