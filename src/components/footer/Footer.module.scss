@@ -6,16 +6,24 @@
   display: flex;
   position: absolute;
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   bottom: 0;
+  position: fixed;
+  z-index: 5;
   .footerContent {
     width: $normal-component-width;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: $medium) {
+      display: block;
+    }
     div {
       display: flex;
       justify-items: center;
+      @media (max-width: $medium) {
+        padding-top: 10px;
+      }
       img {
         height: 30px;
       }
@@ -26,6 +34,10 @@
         text-decoration: none;
         &:hover {
           text-decoration: underline;
+        }
+        @media (max-width: $medium) {
+          font-size: 15px;
+          margin: auto 10px auto 10px;
         }
       }
     }
