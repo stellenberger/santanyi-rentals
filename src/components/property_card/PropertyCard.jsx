@@ -36,6 +36,7 @@ export default function PropertyCard({ images, propertyName, propertySVGs }) {
             return (<Slide index={images.indexOf(img)}>
               <span className={classes.imageContainer}>
                 <img src={img} alt="a mallorcan house" />
+                <a href="https://google.com" className={classes.viewProperty}><b>View details</b></a>
               </span>
             </Slide>)
           })}

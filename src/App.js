@@ -20,7 +20,7 @@ function App() {
   const backgroundHeroImage = {
     backgroundImage: `url(${CalaLlombards})`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
   }
 
   const backgroundColor = {
