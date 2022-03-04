@@ -19,8 +19,14 @@
       img {
         height: 30px;
       }
-      span {
+      a {
         margin: auto 0 auto 40px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
