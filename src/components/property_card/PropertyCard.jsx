@@ -34,7 +34,9 @@ export default function PropertyCard({ images, propertyName, propertySVGs }) {
         <Slider>
           { images && images.map(img => {
             return (<Slide index={images.indexOf(img)}>
-              <img src={img} alt="a mallorcan house" />
+              <span className={classes.imageContainer}>
+                <img src={img} alt="a mallorcan house" />
+              </span>
             </Slide>)
           })}
         </Slider>

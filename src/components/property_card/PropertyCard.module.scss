@@ -7,8 +7,17 @@
   position: relative;
   box-shadow: 0px 0px 10px 3px black;
   border-radius: 3px;
-  img {
-    width: 400px;
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+      flex-shrink: 0;
+      max-height: 550px;
+      max-width: 450px;
+      transform: translateY(-10%)
+    }
   }
   .topBanner {
     height: 20px;
