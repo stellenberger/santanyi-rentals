@@ -12,11 +12,30 @@
   }
   .topBanner {
     height: 20px;
+    overflow: hidden;
     width: 100%;
     padding: 10px;
     background-color: rgba(black, 0.7);
     position: absolute;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 20px;
+    .propertyInformation {
+      display: flex;
+      margin-right: 10px;
+      justify-content: flex-end;
+      .SVGContainer {
+        .propertySVG {
+          height: 15px;
+          width: 20px;
+          padding: 0 5px 0 5px;
+        }
+        span {
+          font-size: 25px;
+        }
+      }
+    }
   }
   .dotGroup {
     text-align: center;

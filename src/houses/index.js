@@ -77,7 +77,33 @@ import {
 
 // Import Embarcadero property photos
 
-
+import { 
+  Embarcadero1,
+  Embarcadero2,
+  Embarcadero3,
+  Embarcadero4,
+  Embarcadero5,
+  Embarcadero6,
+  Embarcadero7,
+  Embarcadero8,
+  Embarcadero9,
+  Embarcadero10,
+  Embarcadero11,
+  Embarcadero12,
+  Embarcadero13,
+  Embarcadero14,
+  Embarcadero15,
+  Embarcadero16,
+  Embarcadero17, 
+  Embarcadero18,
+  Embarcadero19,
+  Embarcadero20,
+  Embarcadero21, 
+  Embarcadero22,
+  Embarcadero23,
+  Embarcadero24,
+  Embarcadero25,
+} from './EmbarcaderoProperty';
 
 // Export Can Sabater
 
@@ -106,6 +132,34 @@ export const CanSabaterPropertyPictures = [
 ]
 
 // Export Embarcadero
+
+export const EmbarcaderoPropertyPictures = [
+  Embarcadero1,
+  Embarcadero2,
+  Embarcadero3,
+  Embarcadero4,
+  Embarcadero5,
+  Embarcadero6,
+  Embarcadero7,
+  Embarcadero8,
+  Embarcadero9,
+  Embarcadero10,
+  Embarcadero11,
+  Embarcadero12,
+  Embarcadero13,
+  Embarcadero14,
+  Embarcadero15,
+  Embarcadero16,
+  Embarcadero17, 
+  Embarcadero18,
+  Embarcadero19,
+  Embarcadero20,
+  Embarcadero21, 
+  Embarcadero22,
+  Embarcadero23,
+  Embarcadero24,
+  Embarcadero25,
+]
 
 // Export S'Estadors
 

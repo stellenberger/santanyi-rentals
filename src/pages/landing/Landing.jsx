@@ -5,7 +5,14 @@ import {
   SEstadorsPropertyPictures,
   CanTiuPropertyPictures,
   CanSabaterPropertyPictures,
+  EmbarcaderoPropertyPictures,
 } from '../../houses';
+import { 
+  SEstadorsSVGs,
+  CanTiuSVGs,
+  CanSabaterSVGs,
+  EmbarcaderoSVGs,
+} from '../../media';
 
 const Landing = () => {
 
@@ -13,9 +20,10 @@ const Landing = () => {
     <div className={classes.landingContainer}>
       <p className={classes.landingTitle}>Properties</p>
       <div className={classes.propertyGrid}>
-        <PropertyCard images={SEstadorsPropertyPictures} propertyName={'Casa S\'Estadors'} />
-        <PropertyCard images={CanTiuPropertyPictures} propertyName={'Casa Can Tiu'} />
-        <PropertyCard images={CanSabaterPropertyPictures} propertyName={'Casa Can Sabater'} />
+        <PropertyCard images={SEstadorsPropertyPictures} propertyName={'Casa S\'Estadors'} propertySVGs={SEstadorsSVGs} />
+        <PropertyCard images={CanTiuPropertyPictures} propertyName={'Casa Can Tiu'} propertySVGs={CanTiuSVGs} />
+        <PropertyCard images={CanSabaterPropertyPictures} propertyName={'Casa Can Sabater'} propertySVGs={CanSabaterSVGs} />
+        <PropertyCard images={EmbarcaderoPropertyPictures} propertyName={'Casa Embarcadero'} propertySVGs={EmbarcaderoSVGs} />
       </div>
     </div>
   )

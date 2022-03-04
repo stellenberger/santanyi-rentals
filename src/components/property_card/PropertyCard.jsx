@@ -7,12 +7,23 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 
-export default function PropertyCard({ images, propertyName }) {
-
+export default function PropertyCard({ images, propertyName, propertySVGs }) {
   return (
     <div className={classes.propertyCardContainer}>
       <div className={classes.topBanner}>
-        { propertyName }
+        <span>
+          { propertyName && propertyName }
+        </span>
+        <div className={classes.propertyInformation}>
+          { propertySVGs && propertySVGs.map(svg => {
+            return (
+              <span className={classes.SVGContainer} >
+                <img src={svg[0]} className={classes.propertySVG} />
+                <span>{ svg[1] && svg[1] }</span>
+              </span>
+            )
+          }) }
+        </div>
       </div>
       <CarouselProvider
           naturalSlideWidth={100}
