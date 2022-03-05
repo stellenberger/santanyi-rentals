@@ -27,5 +27,8 @@
     &:hover {
       border-bottom: 2px solid white;
     }
+    @media (max-width: $medium) {
+      font-size: 30px;
+    }
   }
 }  

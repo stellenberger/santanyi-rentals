@@ -16,6 +16,7 @@ const Ul = styled.ul`
       font-size: 100%;
     };
     @media screen and (max-width: 768px) {
+      display: flex;
       flex-flow: column nowrap;
       z-index: 199;
       text-align: center;
@@ -30,9 +31,8 @@ const Ul = styled.ul`
       margin: 0;
       transition: transform 0.3s ease-in-out;
       li {
-        padding-top: 30px;
+        padding-top: 10vh;
         color: white;
-        font-size: 35px;
       }
     }
   `

@@ -7,7 +7,7 @@ import {
 } from './components'
 import { 
   Landing, 
-  About, 
+  Property, 
 } from './pages'
 import { 
   CalaLlombards,
@@ -59,7 +59,7 @@ function App() {
       <TopNavigation />
         <Routes>
           <Route exact path='/' element={<Landing/>} />
-          <Route exact path='/about' element={<About/>} />
+          <Route exact path='/:id' element={<Property/>} />
         </Routes>
       <Footer/>
       </BrowserRouter>
