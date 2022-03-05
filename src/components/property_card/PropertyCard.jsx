@@ -4,6 +4,7 @@ import {
   WhiteMail,
   WhitePhone,
 } from '../../media'
+import { Link } from 'react-router-dom'
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 
@@ -36,7 +37,7 @@ export default function PropertyCard({ images, propertyName, propertySVGs }) {
             return (<Slide index={images.indexOf(img)}>
               <span className={classes.imageContainer}>
                 <img src={img} alt="a mallorcan house" />
-                <a href="https://google.com" className={classes.viewProperty}><b>View details</b></a>
+                <Link to='/embarcadero' className={classes.viewProperty}><b>View details</b></Link>
               </span>
             </Slide>)
           })}

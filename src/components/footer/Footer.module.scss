@@ -4,11 +4,11 @@
   background-color: rgba(0,0,0,0.8);
   border-top: 3px solid black;
   display: flex;
-  position: absolute;
   width: 100vw;
   height: 15vh;
   bottom: 0;
   position: fixed;
+  margin-top: 50px;
   z-index: 5;
   .footerContent {
     width: $normal-component-width;
@@ -30,6 +30,7 @@
       a {
         margin: auto 0 auto 40px;
         font-size: 20px;
+        word-break: break-all;
         color: white;
         text-decoration: none;
         &:hover {

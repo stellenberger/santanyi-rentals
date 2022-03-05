@@ -15,7 +15,8 @@ const Ul = styled.ul`
       color: white;
       font-size: 100%;
     };
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
+      display: flex;
       flex-flow: column nowrap;
       z-index: 199;
       text-align: center;
@@ -30,21 +31,20 @@ const Ul = styled.ul`
       margin: 0;
       transition: transform 0.3s ease-in-out;
       li {
-        padding-top: 30px;
+        padding-top: 10vh;
         color: white;
-        font-size: 35px;
       }
     }
   `
 const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) => {
   return (
     <div>
-      <h1>Santanyi Holiday Rentals</h1>
+      <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1>Santanyi Holiday Rentals</h1></Link>
       <Ul open={open}>
-        <li><Link to='/' onClick={() => changeColor(backgroundHeroImage)}><span className={classes.item}>Casa Embarcadero</span></Link></li>
-        <li><Link to='/about' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa S’Estadors</span></Link></li>
-        <li><Link to='/example' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa Can Tui</span></Link></li>
-        <li><Link to='/example' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa Can Sabater</span></Link></li>
+        <li><Link to='/embarcadero' onClick={() => changeColor(backgroundHeroImage)}><span className={classes.item}>Casa Embarcadero</span></Link></li>
+        <li><Link to='/sestador' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa S’Estadors</span></Link></li>
+        <li><Link to='/cantiu' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa Can Tiu</span></Link></li>
+        <li><Link to='/cansabater' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa Can Sabater</span></Link></li>
       </Ul>
     </div>
   )

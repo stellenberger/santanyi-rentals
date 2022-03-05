@@ -18,7 +18,7 @@ const Landing = () => {
 
   return (
     <div className={classes.landingContainer}>
-      <p className={classes.landingTitle}>Properties</p>
+        <p className={classes.landingTitle}>Properties</p>
       <div className={classes.propertyGrid}>
         <PropertyCard images={SEstadorsPropertyPicturesForCards} propertyName={'Casa S\'Estadors'} propertySVGs={SEstadorsSVGs} />
         <PropertyCard images={CanTiuPropertyPicturesForCards} propertyName={'Casa Can Tiu'} propertySVGs={CanTiuSVGs} />

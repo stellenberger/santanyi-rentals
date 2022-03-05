@@ -7,7 +7,7 @@ import {
 } from './components'
 import { 
   Landing, 
-  About, 
+  Property, 
 } from './pages'
 import { 
   CalaLlombards,
@@ -20,6 +20,8 @@ function App() {
   const backgroundHeroImage = {
     backgroundImage: `url(${CalaLlombards})`,
     backgroundRepeat: 'no-repeat',
+    minHeight: '100vh',
+    height: '100%',
     backgroundSize: 'cover',
   }
 
@@ -55,12 +57,12 @@ function App() {
   return (
     <div className={classes.App} style={background}>
       <BrowserRouter>
-      <TopNavigation />
+        <TopNavigation />
         <Routes>
           <Route exact path='/' element={<Landing/>} />
-          <Route exact path='/about' element={<About/>} />
+          <Route exact path='/:id' element={<Property/>} />
         </Routes>
-      <Footer/>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

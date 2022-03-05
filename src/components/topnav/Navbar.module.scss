@@ -3,9 +3,14 @@
 .navbar {
   background-color: rgba(0,0,0, 0.8);
   border-bottom: 3px solid black;
+  a {
+    text-decoration: none;
+    color: white
+  }
   h1 {
     font-family: $site-font;
     font-size: 50px;
+    text-decoration: none;
     @media (max-width: $medium) {
       font-size: 30px;
     }
@@ -17,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 786px) {
+    @media screen and (max-width: $medium) {
       display: flex;
       margin: auto;
     }
@@ -26,6 +31,9 @@
     font-size: 20px;
     &:hover {
       border-bottom: 2px solid white;
+    }
+    @media (max-width: $medium) {
+      font-size: 30px;
     }
   }
 }  
