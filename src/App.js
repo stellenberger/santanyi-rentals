@@ -20,8 +20,9 @@ function App() {
   const backgroundHeroImage = {
     backgroundImage: `url(${CalaLlombards})`,
     backgroundRepeat: 'no-repeat',
+    minHeight: '100vh',
+    height: '100%',
     backgroundSize: 'cover',
-    height: "100%",
   }
 
   const backgroundColor = {
@@ -56,12 +57,12 @@ function App() {
   return (
     <div className={classes.App} style={background}>
       <BrowserRouter>
-      <TopNavigation />
+        <TopNavigation />
         <Routes>
           <Route exact path='/' element={<Landing/>} />
           <Route exact path='/:id' element={<Property/>} />
         </Routes>
-      <Footer/>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

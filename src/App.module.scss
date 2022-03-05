@@ -4,4 +4,17 @@
   background-color: rgba($color: #080935, $alpha: 1);
   color: white;
   height: 100vh;
+  .container {
+    height: 100vh;
+    border-collapse: collapse;
+  }
+}
+
+.App::before{
+  background-color: rgba(0, 0, 0, 0.1);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
