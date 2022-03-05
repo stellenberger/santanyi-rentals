@@ -9,6 +9,7 @@
   border-radius: 3px;
   margin: auto;
   @media (max-width: $medium) {
+    width: 350px;
   }
   .imageContainer {
     display: flex;

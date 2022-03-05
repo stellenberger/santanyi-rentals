@@ -4,6 +4,9 @@
   width: $normal-component-width;
   margin: auto;
   padding-bottom: 20vh;
+  @media (max-width: $medium) {
+    width:90vw;
+  }
   .landingTitle {
     margin-top:15vh;
     font-size: 40px;
