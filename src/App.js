@@ -21,6 +21,7 @@ function App() {
     backgroundImage: `url(${CalaLlombards})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    height: "100%",
   }
 
   const backgroundColor = {
