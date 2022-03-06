@@ -19,3 +19,5 @@ export { default as SEstadors19 } from './S\'Estadors 19.jpg'
 export { default as SEstadors20 } from './S\'Estadors 20.jpg'
 export { default as SEstadors21 } from './S\'Estadors 21.jpg'
 export { default as SEstadors22 } from './S\'Estadors 22.jpg'
+
+export { default as SEstadorsPropertyDetails } from './SEstadorsPropertyDetails.jsx'

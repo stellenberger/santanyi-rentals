@@ -20,10 +20,10 @@ const Landing = () => {
     <div className={classes.landingContainer}>
         <p className={classes.landingTitle}>Properties</p>
       <div className={classes.propertyGrid}>
-        <PropertyCard images={SEstadorsPropertyPicturesForCards} propertyName={'Casa S\'Estadors'} propertySVGs={SEstadorsSVGs} />
-        <PropertyCard images={CanTiuPropertyPicturesForCards} propertyName={'Casa Can Tiu'} propertySVGs={CanTiuSVGs} />
-        <PropertyCard images={CanSabaterPropertyPicturesForCards} propertyName={'Casa Can Sabater'} propertySVGs={CanSabaterSVGs} />
-        <PropertyCard images={EmbarcaderoPropertyPicturesForCards} propertyName={'Casa Embarcadero'} propertySVGs={EmbarcaderoSVGs} />
+        <PropertyCard images={SEstadorsPropertyPicturesForCards} propertyId={'sestadors'} propertyName={'Casa S\'Estadors'} propertySVGs={SEstadorsSVGs} />
+        <PropertyCard images={CanTiuPropertyPicturesForCards} propertyId={'cantiu'} propertyName={'Casa Can Tiu'} propertySVGs={CanTiuSVGs} />
+        <PropertyCard images={CanSabaterPropertyPicturesForCards} propertyId={'cansabater'} propertyName={'Casa Can Sabater'} propertySVGs={CanSabaterSVGs} />
+        <PropertyCard images={EmbarcaderoPropertyPicturesForCards} propertyId={'embarcadero'} propertyName={'Casa Embarcadero'} propertySVGs={EmbarcaderoSVGs} />
       </div>
     </div>
   )

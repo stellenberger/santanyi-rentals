@@ -1,14 +1,10 @@
 import React from 'react';
 import classes from './PropertyCard.module.scss';
-import { 
-  WhiteMail,
-  WhitePhone,
-} from '../../media'
 import { Link } from 'react-router-dom'
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 
-export default function PropertyCard({ images, propertyName, propertySVGs }) {
+export default function PropertyCard({ images, propertyName, propertySVGs, propertyId }) {
   return (
     <div className={classes.propertyCardContainer}>
       <div className={classes.topBanner}>
@@ -36,8 +32,8 @@ export default function PropertyCard({ images, propertyName, propertySVGs }) {
           { images && images.map(img => {
             return (<Slide index={images.indexOf(img)}>
               <span className={classes.imageContainer}>
-                <img src={img} alt="a mallorcan house" />
-                <Link to='/embarcadero' className={classes.viewProperty}><b>View details</b></Link>
+                <img src={img} alt={`photos of ${propertyId} property`} />
+                <Link to={`/${propertyId}`} className={classes.viewProperty}><b>View details</b></Link>
               </span>
             </Slide>)
           })}

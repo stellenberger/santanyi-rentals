@@ -1,23 +1,24 @@
 import classes from './Property.module.scss';
 import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown'
-import { ExampleHouse, ExampleHouseBookings } from '../../houses'
-import RemarkGfm from 'remark-gfm'
+
+import { 
+  PropertyBundles
+ } from '../../houses';
 
 export default function Property() {
-  const [house, setHouse] = useState(null)
-  useEffect(() => {
-    fetch(ExampleHouse).then(res => res.text()).then(text => setHouse(text));
-  }, [])
+  const [properties, setProperties] = useState(PropertyBundles)
+  const [property, setProperty] = useState(null)
 
-  console.log(ExampleHouseBookings)
+  useEffect(() => {
+    let id = window.location.pathname.split('/')
+    properties && setProperty(properties.filter(property => property.id == id[id.length - 1])[0])
+  }, [])
 
   return (
     <div className={classes.aboutContainer}>
-      <div className={classes.title}>about</div>
+      <div className={classes.title}>{property && property.id}</div>
       <div className={classes.contentContainer}>
-      <ReactMarkdown children={house} remarkPlugins={[RemarkGfm]}/>
-        This is an example about component
+        {property && property.detailsComponent}
       </div>
     </div>
   )

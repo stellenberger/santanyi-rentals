@@ -20,3 +20,5 @@ export { default as CanSabater20 } from './Can Sabater 20.jpg'
 export { default as CanSabater21 } from './Can Sabater 21.jpg'
 export { default as CanSabater22 } from './Can Sabater 22.jpg'
 export { default as CanSabater23 } from './Can Sabater 23.jpg'
+
+export { default as CanSabaterPropertyDetails } from './canSabaterPropertyDetails.jsx'

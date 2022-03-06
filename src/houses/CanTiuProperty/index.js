@@ -20,3 +20,5 @@ export { default as CanTiu19 } from './Can Tiu 19.jpg'
 export { default as CanTiu20 } from './Can Tiu 20.jpg'
 export { default as CanTiu21 } from './Can Tiu 21.jpg'
 export { default as CanTiu22 } from './Can Tiu 22.jpg'
+
+export { default as CanTiuPropertyDetails } from './CanTiuPropertyDetails.jsx'

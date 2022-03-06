@@ -23,3 +23,5 @@ export { default as Embarcadero22 } from './Embarcadero 22.jpg'
 export { default as Embarcadero23 } from './Embarcadero 23.jpg'
 export { default as Embarcadero24 } from './Embarcadero 24.jpg'
 export { default as Embarcadero25 } from './Embarcadero 25.jpg'
+
+export { default as EmbarcaderoPropertyDetails } from './EmbarcaderoPropertyDetails.jsx'
