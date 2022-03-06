@@ -8,7 +8,7 @@
     width:90vw;
   }
   .landingTitle {
-    margin-top:15vh;
+    
     font-size: 40px;
     animation: slide 1s ease-out 0s 1 normal forwards;
     @media (max-width: $medium) {
@@ -16,10 +16,12 @@
     }
   }
   .propertyGrid {
+    margin-top:10vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(380px, 1fr));
+    gap: 10px;
     @media (max-width: $medium) {
+      margin-top:25px;
       display: flex;
       flex-direction: column;
     }

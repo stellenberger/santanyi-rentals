@@ -18,7 +18,6 @@ const Landing = () => {
 
   return (
     <div className={classes.landingContainer}>
-        <p className={classes.landingTitle}>Properties</p>
       <div className={classes.propertyGrid}>
         <PropertyCard images={SEstadorsPropertyPicturesForCards} propertyId={'sestadors'} propertyName={'Casa S\'Estadors'} propertySVGs={SEstadorsSVGs} />
         <PropertyCard images={CanTiuPropertyPicturesForCards} propertyId={'cantiu'} propertyName={'Casa Can Tiu'} propertySVGs={CanTiuSVGs} />
