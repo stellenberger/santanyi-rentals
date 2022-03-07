@@ -1,8 +1,10 @@
 @import '../../utils/variables';
 
 .navbar {
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0,0,0, 0.6);
   border-bottom: 3px solid black;
+  font-family: $site-font;
+  font-weight: bold;
   a {
     text-decoration: none;
     color: white
@@ -16,7 +18,7 @@
     }
   }
   .navbarContent {
-    min-height: 15vh;
+    height: 20vh;
     width: $normal-component-width;
     margin: auto;
     display: flex;
@@ -25,6 +27,7 @@
     @media screen and (max-width: $medium) {
       display: flex;
       margin: auto;
+      height: 15vh;
     }
   }
   .item {
