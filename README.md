@@ -1,10 +1,5 @@
-React Boilerplate
+Santanyi Rentals
 
-What does this come with? 
+This is the official GitHub repository for the Santanyi Holiday Rentals website
 
-- React setup with React Router DOM
-- Modular setup for Media and Components
-- Centered navbar
-- Google Analytics
-- Node Sass imported as modules
-- Burger menu for mobile screens
+You can view the website at: https://master.d14r4w66mm3648.amplifyapp.com/

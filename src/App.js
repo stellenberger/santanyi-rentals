@@ -29,21 +29,8 @@ function App() {
     backgroundColor: '#080935'
   }
 
-  const styling = () => {
-    if (window.location.pathname === '/') {
-      return (
-        setBackground(
-          backgroundHeroImage
-        )
-      ) 
-    } else {
-      return (
-        setBackground(
-          backgroundColor
-        )
-      )
-    }
-  }
+  const styling = () => setBackground(backgroundHeroImage)
+
   useEffect(() => {
     styling()
     ReactGa.initialize('PUT YOUR GOOGLE ANALYTICS CODE HERE')
@@ -51,9 +38,7 @@ function App() {
     // to report page view
     ReactGa.pageview(window.location.pathname + window.location.search)
   }, [])
-  const changeColor = (color) => {
-    setBackground(color)
-  }
+
   return (
     <div className={classes.App} style={background}>
       <BrowserRouter>
