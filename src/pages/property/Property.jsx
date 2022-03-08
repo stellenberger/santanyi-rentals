@@ -2,6 +2,7 @@ import classes from './Property.module.scss';
 import React, { useEffect, useState } from 'react';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
+import { SantanyiCalendar } from '../../components'
 
 import { 
   PropertyBundles
@@ -41,6 +42,7 @@ export default function Property() {
       </div>
       <div className={classes.contentContainer}>
         {property && property.detailsComponent}
+        <SantanyiCalendar />
       </div>
     </div>
   )
