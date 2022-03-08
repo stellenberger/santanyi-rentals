@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import classes from './SantanyiCalendar.module.scss'
-import Calendar from 'react-calendar';
 
 export default function SantanyiCalendar() {
   const [currentYear, setCurrentYear] = useState((new Date).getFullYear())
@@ -45,16 +44,34 @@ export default function SantanyiCalendar() {
     }
   }
 
+  const handleNextYear = () => {
+    setCurrentYear(currentYear + 1)
+    setCurrentMonth(0)
+  }
+
+  const handlePreviousYear = () => {
+    setCurrentYear(currentYear - 1)
+    setCurrentMonth(11)
+  }
+
   const nextMonth = () => {
-    const newMonth = currentMonth + 1
-    setCurrentMonth(newMonth)
-    buildDates(newMonth, 2022)
+    if (currentMonth == 11) {
+      handleNextYear()
+    } else {
+      const newMonth = currentMonth + 1
+      setCurrentMonth(newMonth)
+      buildDates(newMonth, 2022)
+    }
   }
 
   const prevMonth = () => {
-    const newMonth = currentMonth - 1
-    setCurrentMonth(newMonth)
-    buildDates(newMonth, 2022)
+    if (currentMonth == 0) {
+      handlePreviousYear()
+    } else {
+      const newMonth = currentMonth - 1
+      setCurrentMonth(newMonth)
+      buildDates(newMonth, 2022)
+    }
   }
 
   const buildDates = (month, year) => {
@@ -68,7 +85,7 @@ export default function SantanyiCalendar() {
         <ul>
           <li className={classes.prev} onClick={prevMonth}>&#10094;</li>
           <li className={classes.next} onClick={nextMonth}>&#10095;</li>
-          <li>{ currentMonth && getMonthName() }<br /><span>{currentYear && currentYear}</span></li>
+          <li>{ getMonthName() }<br /><span>{currentYear && currentYear}</span></li>
         </ul>
       </div>
 
