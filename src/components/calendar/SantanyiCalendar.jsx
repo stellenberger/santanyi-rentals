@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import classes from './SantanyiCalendar.module.scss'
 
 export default function SantanyiCalendar() {
+  const [precedingDays, setPrecedingDays] = useState([])
   const [currentYear, setCurrentYear] = useState((new Date).getFullYear())
   const [currentMonth, setCurrentMonth] = useState(null)
   const [totalDateRange, setTotalDateRange] = useState([])
@@ -29,7 +30,14 @@ export default function SantanyiCalendar() {
     const currentDate = new Date();
     setCurrentMonth(currentDate.getMonth())
     buildDates(currentDate.getMonth(), currentDate.getFullYear())
+    offsetPrecedingDays(currentDate.getMonth(), currentDate.getFullYear())
   }, [])
+
+  const offsetPrecedingDays = (month, year) => {
+    const datesToOffset = (new Date(year, month, 1)).getDay();
+    setPrecedingDays([...Array(datesToOffset).keys()])
+    console.log([...Array(datesToOffset).keys()])
+  } 
 
   const getMonthName = () => {
     return months[currentMonth]
@@ -45,13 +53,17 @@ export default function SantanyiCalendar() {
   }
 
   const handleNextYear = () => {
-    setCurrentYear(currentYear + 1)
+    const newYear = currentYear + 1
+    setCurrentYear(newYear)
     setCurrentMonth(0)
+    offsetPrecedingDays(0, newYear)
   }
 
   const handlePreviousYear = () => {
-    setCurrentYear(currentYear - 1)
+    const newYear = currentYear - 1
+    setCurrentYear(newYear)
     setCurrentMonth(11)
+    offsetPrecedingDays(11, newYear)
   }
 
   const nextMonth = () => {
@@ -61,6 +73,7 @@ export default function SantanyiCalendar() {
       const newMonth = currentMonth + 1
       setCurrentMonth(newMonth)
       buildDates(newMonth, 2022)
+      offsetPrecedingDays(newMonth, 2022)
     }
   }
 
@@ -71,6 +84,7 @@ export default function SantanyiCalendar() {
       const newMonth = currentMonth - 1
       setCurrentMonth(newMonth)
       buildDates(newMonth, 2022)
+      offsetPrecedingDays(newMonth, 2022)
     }
   }
 
@@ -90,16 +104,17 @@ export default function SantanyiCalendar() {
       </div>
 
       <ul className={classes.weekdays}>
+        <li>Su</li>
         <li>Mo</li>
         <li>Tu</li>
         <li>We</li>
         <li>Th</li>
         <li>Fr</li>
         <li>Sa</li>
-        <li>Su</li>
       </ul>
 
       <ul className={classes.days}>
+        { precedingDays.map(day => <li></li>) }
         { totalDateRange && totalDateRange.map(date => <li style={getDateStyling(date)}>{date}</li>)}
       </ul>
     </div>
