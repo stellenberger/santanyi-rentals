@@ -42,7 +42,7 @@ export default function Property() {
       </div>
       <div className={classes.contentContainer}>
         {property && property.detailsComponent}
-        <SantanyiCalendar />
+        <SantanyiCalendar bookings={property && property.bookings}/>
       </div>
     </div>
   )

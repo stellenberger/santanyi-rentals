@@ -22,3 +22,4 @@ export { default as CanTiu21 } from './Can Tiu 21.jpg'
 export { default as CanTiu22 } from './Can Tiu 22.jpg'
 
 export { default as CanTiuPropertyDetails } from './CanTiuPropertyDetails.jsx'
+export { default as CanTiuBookings } from './bookings.json'

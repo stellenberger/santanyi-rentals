@@ -25,3 +25,4 @@ export { default as Embarcadero24 } from './Embarcadero 24.jpg'
 export { default as Embarcadero25 } from './Embarcadero 25.jpg'
 
 export { default as EmbarcaderoPropertyDetails } from './EmbarcaderoPropertyDetails.jsx'
+export { default as EmbarcaderoBookings } from './bookings.json'

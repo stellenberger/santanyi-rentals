@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import classes from './SantanyiCalendar.module.scss'
 
-export default function SantanyiCalendar() {
-  const [precedingDays, setPrecedingDays] = useState([])
-  const [currentYear, setCurrentYear] = useState((new Date).getFullYear())
-  const [currentMonth, setCurrentMonth] = useState(null)
-  const [totalDateRange, setTotalDateRange] = useState([])
-
-  const daysInMonth = (month, year) => {
-    return new Date(year, month, 0).getDate();
-  }
-
+export default function SantanyiCalendar({ bookings }) {
   const months = [
     "January",
     "February",
@@ -26,9 +17,17 @@ export default function SantanyiCalendar() {
     "December",
   ]
 
+  const [precedingDays, setPrecedingDays] = useState([])
+  const [currentYear, setCurrentYear] = useState((new Date).getFullYear())
+  const [currentMonth, setCurrentMonth] = useState((new Date).getMonth())
+  const [totalDateRange, setTotalDateRange] = useState([])
+  
+  const daysInMonth = (month, year) => {
+    return new Date(year, month, 0).getDate();
+  }
+
   useEffect(() => {
     const currentDate = new Date();
-    setCurrentMonth(currentDate.getMonth())
     buildDates(currentDate.getMonth(), currentDate.getFullYear())
     offsetPrecedingDays(currentDate.getMonth(), currentDate.getFullYear())
   }, [])
@@ -36,7 +35,6 @@ export default function SantanyiCalendar() {
   const offsetPrecedingDays = (month, year) => {
     const datesToOffset = (new Date(year, month, 1)).getDay();
     setPrecedingDays([...Array(datesToOffset).keys()])
-    console.log([...Array(datesToOffset).keys()])
   } 
 
   const getMonthName = () => {
@@ -45,11 +43,15 @@ export default function SantanyiCalendar() {
 
   const getDateStyling = (date) => {
     // Here we include the logic to search if the date is taken or not
-    if (date) {
-      // return { backgroundColor: `white` }
+    if (dateTaken(date)) {
+      return { backgroundColor: `red` }
     } else {
-      // return { backgroundColor: `red` }
+      return { backgroundColor: `green` }
     }
+  }
+
+  const dateTaken = (date) => {
+    return bookings[currentYear][months[currentMonth]].flat().includes(date.toString())
   }
 
   const handleNextYear = () => {

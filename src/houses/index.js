@@ -23,7 +23,8 @@ import {
   SEstadors20,
   SEstadors21, 
   SEstadors22,
-  SEstadorsPropertyDetails
+  SEstadorsPropertyDetails,
+  SEstadorsBookings
 } from './S\'EstadorsProperty';
 
 // Import Can Sabater property photos
@@ -51,6 +52,7 @@ import {
   CanSabater22, 
   CanSabater23,
   CanSabaterPropertyDetails,
+  CanSabaterBookings,
 } from './CanSabaterProperty';
 
 // Import Can Tiu property photos
@@ -77,7 +79,8 @@ import {
   CanTiu20,
   CanTiu21, 
   CanTiu22,
-  CanTiuPropertyDetails
+  CanTiuPropertyDetails,
+  CanTiuBookings
 } from './CanTiuProperty';
 
 // Import Embarcadero property photos
@@ -108,7 +111,8 @@ import {
   Embarcadero23,
   Embarcadero24,
   Embarcadero25,
-  EmbarcaderoPropertyDetails
+  EmbarcaderoPropertyDetails,
+  EmbarcaderoBookings
 } from './EmbarcaderoProperty';
 
 // Export Can Sabater
@@ -149,6 +153,7 @@ export const CanSabaterPropertyDetailsBundle = {
     CanSabater23,
   ],
   "detailsComponent": <CanSabaterPropertyDetails/>,
+  "bookings": CanSabaterBookings,
 }
 
 // Export Embarcadero
@@ -191,6 +196,7 @@ export const EmbarcaderoPropertyDetailsBundle = {
     Embarcadero25,
   ],
   "detailsComponent": <EmbarcaderoPropertyDetails/>,
+  "bookings": EmbarcaderoBookings,
 }
 
 // Export S'Estadors
@@ -229,6 +235,7 @@ export const SEstadorsPropertyDetailsBundle = {
     SEstadors22,
   ],
   "detailsComponent": <SEstadorsPropertyDetails/>,
+  "bookings": SEstadorsBookings,
 }
 
 // Export Can Tui
@@ -269,6 +276,7 @@ export const CanTiuPropertyDetailsBundle = {
     CanTiu22,
   ],
   "detailsComponent": <CanTiuPropertyDetails/>,
+  "bookings": CanTiuBookings,
 }
 
 
