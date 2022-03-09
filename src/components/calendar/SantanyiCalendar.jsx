@@ -44,9 +44,9 @@ export default function SantanyiCalendar({ bookings }) {
   const getDateStyling = (date) => {
     // Here we include the logic to search if the date is taken or not
     if (dateTaken(date)) {
-      return { backgroundColor: `red` }
+      return { backgroundColor: `rgba(201, 76, 76, 0.8)` }
     } else {
-      return { backgroundColor: `green` }
+      return { backgroundColor: `rgba(255, 255, 255, 0.8)` }
     }
   }
 
@@ -117,7 +117,7 @@ export default function SantanyiCalendar({ bookings }) {
 
       <ul className={classes.days}>
         { precedingDays.map(day => <li></li>) }
-        { totalDateRange && totalDateRange.map(date => <li style={getDateStyling(date)}>{date}</li>)}
+        { totalDateRange && totalDateRange.map(date => <li style={getDateStyling(date)}><span>{date}</span></li>)}
       </ul>
     </div>
   )

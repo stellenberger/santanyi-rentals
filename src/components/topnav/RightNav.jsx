@@ -41,10 +41,10 @@ const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) =
     <div>
       <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1>Santanyi Holiday Rentals</h1></Link>
       <Ul open={open}>
-        <li><Link to='/embarcadero' onClick={() => changeColor(backgroundHeroImage)}><span className={classes.item}>Casa Embarcadero</span></Link></li>
-        <li><Link to='/sestadors' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa S’Estadors</span></Link></li>
-        <li><Link to='/cantiu' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa Can Tiu</span></Link></li>
-        <li><Link to='/cansabater' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Casa Can Sabater</span></Link></li>
+        <li><Link to='/embarcadero' onClick={() => changeColor(backgroundHeroImage)}><span className={classes.item}>Embarcadero</span></Link></li>
+        <li><Link to='/sestadors' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>S’Estadors</span></Link></li>
+        <li><Link to='/cantiu' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Tiu</span></Link></li>
+        <li><Link to='/cansabater' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Sabater</span></Link></li>
       </Ul>
     </div>
   )

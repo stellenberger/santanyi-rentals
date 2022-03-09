@@ -2,7 +2,8 @@ import classes from './Property.module.scss';
 import React, { useEffect, useState } from 'react';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
-import { SantanyiCalendar } from '../../components'
+import { SantanyiCalendar, PropertyTitleCard } from '../../components'
+import { Gravatar } from '../../media'
 
 import { 
   PropertyBundles
@@ -19,6 +20,10 @@ export default function Property() {
 
   return (
     <div className={classes.propertyContainer}>
+      <div className={classes.contentContainer}>
+        <PropertyTitleCard property={property} gravatar={Gravatar} />
+        {property && property.detailsComponent}
+      </div>
       <div className={classes.carouselContainer}>
         <CarouselProvider
             naturalSlideWidth={100}
@@ -40,8 +45,7 @@ export default function Property() {
           <ButtonNext className={classes.buttonNext}><i class={classes.right} /></ButtonNext>
         </CarouselProvider>
       </div>
-      <div className={classes.contentContainer}>
-        {property && property.detailsComponent}
+      <div className={classes.calendarContainer} >
         <SantanyiCalendar bookings={property && property.bookings}/>
       </div>
     </div>

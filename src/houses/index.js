@@ -154,6 +154,7 @@ export const CanSabaterPropertyDetailsBundle = {
   ],
   "detailsComponent": <CanSabaterPropertyDetails/>,
   "bookings": CanSabaterBookings,
+  "location": "Santanyi",
 }
 
 // Export Embarcadero
@@ -197,6 +198,7 @@ export const EmbarcaderoPropertyDetailsBundle = {
   ],
   "detailsComponent": <EmbarcaderoPropertyDetails/>,
   "bookings": EmbarcaderoBookings,
+  "location": "Cala Llombards",
 }
 
 // Export S'Estadors
@@ -236,6 +238,7 @@ export const SEstadorsPropertyDetailsBundle = {
   ],
   "detailsComponent": <SEstadorsPropertyDetails/>,
   "bookings": SEstadorsBookings,
+  "location": "Santanyi",
 }
 
 // Export Can Tui
@@ -277,6 +280,7 @@ export const CanTiuPropertyDetailsBundle = {
   ],
   "detailsComponent": <CanTiuPropertyDetails/>,
   "bookings": CanTiuBookings,
+  "location": "Santanyi",
 }
 
 

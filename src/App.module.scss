@@ -3,9 +3,9 @@
 .App {
   background-color: rgba($color: #080935, $alpha: 1);
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   .container {
-    height: 100vh;
+    min-height: 100vh;
     border-collapse: collapse;
   }
 }

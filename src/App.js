@@ -26,10 +26,24 @@ function App() {
   }
 
   const backgroundColor = {
-    backgroundColor: '#080935'
+    backgroundColor: '#F3F3F2'
   }
 
-  const styling = () => setBackground(backgroundHeroImage)
+  const styling = () => {
+    if (window.location.pathname === '/') {
+      return (
+        setBackground(
+          backgroundHeroImage
+        )
+      ) 
+    } else {
+      return (
+        setBackground(
+          backgroundColor
+        )
+      )
+    }
+  }
 
   useEffect(() => {
     styling()
@@ -47,7 +61,6 @@ function App() {
           <Route exact path='/' element={<Landing/>} />
           <Route exact path='/:id' element={<Property/>} />
         </Routes>
-        <Footer/>
       </BrowserRouter>
     </div>
   );

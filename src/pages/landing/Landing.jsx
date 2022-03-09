@@ -19,10 +19,10 @@ const Landing = () => {
   return (
     <div className={classes.landingContainer}>
       <div className={classes.propertyGrid}>
-        <PropertyCard images={EmbarcaderoPropertyPicturesForCards} propertyId={'embarcadero'} propertyName={'Casa Embarcadero'} propertySVGs={EmbarcaderoSVGs} />
-        <PropertyCard images={SEstadorsPropertyPicturesForCards} propertyId={'sestadors'} propertyName={'Casa S\'Estadors'} propertySVGs={SEstadorsSVGs} />
-        <PropertyCard images={CanSabaterPropertyPicturesForCards} propertyId={'cansabater'} propertyName={'Casa Can Sabater'} propertySVGs={CanSabaterSVGs} />
-        <PropertyCard images={CanTiuPropertyPicturesForCards} propertyId={'cantiu'} propertyName={'Casa Can Tiu'} propertySVGs={CanTiuSVGs} />
+        <PropertyCard images={EmbarcaderoPropertyPicturesForCards} propertyId={'embarcadero'} propertyName={'Embarcadero'} propertySVGs={EmbarcaderoSVGs} />
+        <PropertyCard images={SEstadorsPropertyPicturesForCards} propertyId={'sestadors'} propertyName={'S\'Estadors'} propertySVGs={SEstadorsSVGs} />
+        <PropertyCard images={CanSabaterPropertyPicturesForCards} propertyId={'cansabater'} propertyName={'Can Sabater'} propertySVGs={CanSabaterSVGs} />
+        <PropertyCard images={CanTiuPropertyPicturesForCards} propertyId={'cantiu'} propertyName={'Can Tiu'} propertySVGs={CanTiuSVGs} />
       </div>
     </div>
   )

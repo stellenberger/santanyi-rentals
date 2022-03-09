@@ -1,7 +1,12 @@
 import React from 'react'
+import classes from '../House.module.scss'
 
 export default function CanTiuPropertyDetails() {
   return (
-    <div>This is the component for the Can Tiu property details</div>
+    <div className={classes.propertyContainer}>
+      <div className={classes.information}>
+        hello world
+      </div>
+    </div>
   )
 }

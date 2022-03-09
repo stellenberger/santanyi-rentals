@@ -25,11 +25,12 @@ export { default as CalaLlombards } from './base_media/cala_llombards.jpeg';
 
 
 // SVG Exports
+export { default as WhiteLocationMarker } from './svgs/whitelocationmarker.svg'
 export { default as WhitePhone } from './svgs/whitephone.svg';
 export { default as WhiteMail } from './svgs/whitemail.svg';
 
 
-// SVG Exports for Casa Embarcadero
+// SVG Exports for Embarcadero
 
 export const EmbarcaderoSVGs = [
   [whiteperson, 8],
@@ -37,7 +38,7 @@ export const EmbarcaderoSVGs = [
   [whitebeachumbrella],
 ]
 
-// SVG Exports for Casa S'Estadors
+// SVG Exports for S'Estadors
 
 export const SEstadorsSVGs = [
   [whiteperson, 2],
@@ -46,7 +47,7 @@ export const SEstadorsSVGs = [
   [whiteaircon],
 ]
 
-// SVG Exports for Casa Can Tiu
+// SVG Exports for Can Tiu
 
 export const CanTiuSVGs = [
   [whiteperson, 4],
@@ -54,7 +55,7 @@ export const CanTiuSVGs = [
   [whiteaircon],
 ]
 
-// SVG Exports for Casa Can Sabater
+// SVG Exports for Can Sabater
 
 export const CanSabaterSVGs = [
   [whiteperson, 6],
@@ -62,3 +63,5 @@ export const CanSabaterSVGs = [
   [whitepool],
   [whiteaircon],
 ]
+
+export { default as Gravatar } from './base_media/gravatar.png';

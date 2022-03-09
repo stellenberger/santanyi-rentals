@@ -1,5 +1,8 @@
+@import '../../utils/variables';
+
 .calendarContainer { 
-  width: 400px;
+  width: 20vw;
+  box-sizing: border-box;
   ul {
     list-style-type: none;
   }
@@ -30,13 +33,13 @@
   
   /* Weekdays (Mon-Sun) */
   .weekdays {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0;
     padding: 10px 0;
     background-color:#ddd;
     width: 100%;
     li {
-      display: inline-block;
-      width: 13.6%;
       color: #666;
       text-align: center;
     }
@@ -44,18 +47,23 @@
 
   /* Days (1-31) */
   .days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 10px 0;
-    background: #eee;
+    background: white;
     margin: 0;
     li {
-      text-align: center;
-      list-style-type: none;
-      display: inline-block;
-      width: 13.6%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       margin-bottom: 5px;
       font-size:12px;
-      color: #777;
+      color: black;
+      height: 55px;
+      font-family: $site-font;
+      font-weight: bold;
     }
   }
 }
