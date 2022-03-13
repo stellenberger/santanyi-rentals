@@ -19,6 +19,26 @@ import {
   whitephone,
   whitepool,
   whitewasher,
+  blackaircon,
+  blackairplanetakeoff,
+  blackbeachumbrella,
+  blackbed,
+  blackcar,
+  blackcocktail,
+  blackcoffee,
+  blackdollar,
+  blackfan,
+  blackflower,
+  blackinternet,
+  blackknifefork,
+  blacklocationmark,
+  blackmail,
+  blackmountain,
+  blacknosmoking,
+  blackperson,
+  blackphone,
+  blackpool,
+  blackwasher,
 } from './svgs'
 
 export { default as CalaLlombards } from './base_media/cala_llombards.jpeg';
@@ -54,6 +74,24 @@ export const CanTiuSVGs = [
   [whitebed, 2],
   [whiteaircon],
 ]
+
+export const ConTiuSVGsMainPage = {
+  "information": [
+    [blackdollar, "250 per night"],
+    [blackperson, "7 People"],
+    [blackbed, "4 bedrooms"],
+    [blackairplanetakeoff, "40 min drive"],
+    [blackbeachumbrella, "10 min drive"],
+    [blacknosmoking, "No smoking"],
+  ],
+  "amenities": [
+    [blackaircon, "Aircon"],
+    [blackflower, "Spacious garden"],
+    [blackinternet, "Internet"],
+    [blackwasher, "Washing machine"],
+    [blackpool, "Swimming pool"],
+  ]
+}
 
 // SVG Exports for Can Sabater
 

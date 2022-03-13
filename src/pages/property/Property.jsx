@@ -24,29 +24,31 @@ export default function Property() {
         <PropertyTitleCard property={property} gravatar={Gravatar} />
         {property && property.detailsComponent}
       </div>
-      <div className={classes.carouselContainer}>
-        <CarouselProvider
-            naturalSlideWidth={100}
-            naturalSlideHeight={150}
-            totalSlides={property && property.images.length}
-            currentSlide={0}
-          >
-          <Slider>
-            { property && property.images.map(img => {
-              return (<Slide index={property.images.indexOf(img)}>
-                <span className={classes.imageContainer}>
-                  <img src={img} alt={`photos of ${property.id} property`} />
-                </span>
-              </Slide>)
-            })}
-          </Slider>
-          <DotGroup className={classes.dotGroup} />
-          <ButtonBack className={classes.buttonBack}><i class={classes.left} /></ButtonBack>
-          <ButtonNext className={classes.buttonNext}><i class={classes.right} /></ButtonNext>
-        </CarouselProvider>
-      </div>
-      <div className={classes.calendarContainer} >
-        <SantanyiCalendar bookings={property && property.bookings}/>
+      <div>
+        <div className={classes.carouselContainer}>
+          <CarouselProvider
+              naturalSlideWidth={100}
+              naturalSlideHeight={150}
+              totalSlides={property && property.images.length}
+              currentSlide={0}
+            >
+            <Slider>
+              { property && property.images.map(img => {
+                return (<Slide index={property.images.indexOf(img)}>
+                  <span className={classes.imageContainer}>
+                    <img src={img} alt={`photos of ${property.id} property`} />
+                  </span>
+                </Slide>)
+              })}
+            </Slider>
+            <DotGroup className={classes.dotGroup} />
+            <ButtonBack className={classes.buttonBack}><i class={classes.left} /></ButtonBack>
+            <ButtonNext className={classes.buttonNext}><i class={classes.right} /></ButtonNext>
+          </CarouselProvider>
+        </div>
+        <div className={classes.calendarContainer} >
+          <SantanyiCalendar bookings={property && property.bookings}/>
+        </div>
       </div>
     </div>
   )
