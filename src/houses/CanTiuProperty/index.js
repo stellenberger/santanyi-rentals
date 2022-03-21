@@ -1,3 +1,46 @@
+import {
+  whiteaircon,
+  whiteairplanetakeoff,
+  whitebeachumbrella,
+  whitebed,
+  whitecar,
+  whitecocktail,
+  whitecoffee,
+  whitedollar,
+  whitefan,
+  whiteflower,
+  whiteinternet,
+  whiteknifefork,
+  whitelocationmark,
+  whitemail,
+  whitemountain,
+  whitenosmoking,
+  whiteperson,
+  whitephone,
+  whitepool,
+  whitewasher,
+  blackaircon,
+  blackairplanetakeoff,
+  blackbeachumbrella,
+  blackbed,
+  blackcar,
+  blackcocktail,
+  blackcoffee,
+  blackdollar,
+  blackfan,
+  blackflower,
+  blackinternet,
+  blackknifefork,
+  blacklocationmark,
+  blackmail,
+  blackmountain,
+  blacknosmoking,
+  blackperson,
+  blackphone,
+  blackpool,
+  blackwasher,
+} from '../../media/svgs'
+
 export { default as CanTiu1 } from './Can Tiu 1.jpg'
 export { default as CanTiu2 } from './Can Tiu 2.jpg'
 export { default as CanTiu3 } from './Can Tiu 3.jpg'
@@ -21,5 +64,24 @@ export { default as CanTiu20 } from './Can Tiu 20.jpg'
 export { default as CanTiu21 } from './Can Tiu 21.jpg'
 export { default as CanTiu22 } from './Can Tiu 22.jpg'
 
-export { default as CanTiuPropertyDetails } from './CanTiuPropertyDetails.jsx'
 export { default as CanTiuBookings } from './bookings.json'
+
+export const CanTiuPropertyDetails = {
+  "svgs": {
+    "information": [
+      [blackdollar, "250 per night"],
+      [blackperson, "7 People"],
+      [blackbed, "4 bedrooms"],
+      [blackairplanetakeoff, "40 min drive"],
+      [blackbeachumbrella, "10 min drive"],
+      [blacknosmoking, "No smoking"],
+    ],
+    "amenities": [
+      [blackaircon, "Aircon"],
+      [blackflower, "Spacious garden"],
+      [blackinternet, "Internet"],
+      [blackwasher, "Washing machine"],
+      [blackpool, "Swimming pool"],
+    ]
+  }
+}

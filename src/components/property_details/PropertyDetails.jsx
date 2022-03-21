@@ -1,8 +1,7 @@
 import React from 'react'
-import classes from '../House.module.scss'
-import { ConTiuSVGsMainPage } from '../../media'
+import classes from './PropertyDetails.module.scss'
 
-export default function CanTiuPropertyDetails() {
+export default function PropertyDetails({ propertyInformation }) {
   return (
     <div className={classes.propertyContainer}>
       <div className={classes.about}>
@@ -11,7 +10,7 @@ export default function CanTiuPropertyDetails() {
       <div className={classes.amenitiesContainer}>
         <div className={classes.information}>
           <h1>Information</h1>
-          {ConTiuSVGsMainPage.information.map(sec => {
+          {propertyInformation.svgs.information.map(sec => {
             return (
               <div className={classes.svgContainer}>
                 <img src={sec[0]} alt="Svg" className={classes.svgs} />
@@ -22,7 +21,7 @@ export default function CanTiuPropertyDetails() {
         </div>
         <div className={classes.amenities}>
           <h1>Amenities</h1>
-          {ConTiuSVGsMainPage.amenities.map(sec => {
+          {propertyInformation.svgs.amenities.map(sec => {
             return (
               <div className={classes.svgContainer}>
                 <img src={sec[0]} alt="Svg" className={classes.svgs} />

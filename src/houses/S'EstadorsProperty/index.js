@@ -1,3 +1,46 @@
+import {
+  whiteaircon,
+  whiteairplanetakeoff,
+  whitebeachumbrella,
+  whitebed,
+  whitecar,
+  whitecocktail,
+  whitecoffee,
+  whitedollar,
+  whitefan,
+  whiteflower,
+  whiteinternet,
+  whiteknifefork,
+  whitelocationmark,
+  whitemail,
+  whitemountain,
+  whitenosmoking,
+  whiteperson,
+  whitephone,
+  whitepool,
+  whitewasher,
+  blackaircon,
+  blackairplanetakeoff,
+  blackbeachumbrella,
+  blackbed,
+  blackcar,
+  blackcocktail,
+  blackcoffee,
+  blackdollar,
+  blackfan,
+  blackflower,
+  blackinternet,
+  blackknifefork,
+  blacklocationmark,
+  blackmail,
+  blackmountain,
+  blacknosmoking,
+  blackperson,
+  blackphone,
+  blackpool,
+  blackwasher,
+} from '../../media/svgs'
+
 export { default as SEstadors2 } from './S\'Estadors 2.jpg'
 export { default as SEstadors3 } from './S\'Estadors 3.jpg'
 export { default as SEstadors4 } from './S\'Estadors 4.jpg'
@@ -20,5 +63,24 @@ export { default as SEstadors20 } from './S\'Estadors 20.jpg'
 export { default as SEstadors21 } from './S\'Estadors 21.jpg'
 export { default as SEstadors22 } from './S\'Estadors 22.jpg'
 
-export { default as SEstadorsPropertyDetails } from './SEstadorsPropertyDetails.jsx'
 export { default as SEstadorsBookings } from './bookings.json'
+
+export const SEstadorsPropertyDetails = {
+  "svgs": {
+    "information": [
+      [blackdollar, "250 per night"],
+      [blackperson, "7 People"],
+      [blackbed, "4 bedrooms"],
+      [blackairplanetakeoff, "40 min drive"],
+      [blackbeachumbrella, "10 min drive"],
+      [blacknosmoking, "No smoking"],
+    ],
+    "amenities": [
+      [blackaircon, "Aircon"],
+      [blackflower, "Spacious garden"],
+      [blackinternet, "Internet"],
+      [blackwasher, "Washing machine"],
+      [blackpool, "Swimming pool"],
+    ]
+  }
+}

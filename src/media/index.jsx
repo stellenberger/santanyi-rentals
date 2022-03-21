@@ -75,13 +75,24 @@ export const CanTiuSVGs = [
   [whiteaircon],
 ]
 
-export const ConTiuSVGsMainPage = {
+
+
+// SVG Exports for Can Sabater
+
+export const CanSabaterSVGs = [
+  [whiteperson, 6],
+  [whitebed, 3],
+  [whitepool],
+  [whiteaircon],
+]
+
+export const CanSabaterSVGsMainPage = {
   "information": [
     [blackdollar, "250 per night"],
-    [blackperson, "7 People"],
-    [blackbed, "4 bedrooms"],
+    [blackperson, "6 People"],
+    [blackbed, "3 bedrooms"],
     [blackairplanetakeoff, "40 min drive"],
-    [blackbeachumbrella, "10 min drive"],
+    [blackbeachumbrella, "5 min drive"],
     [blacknosmoking, "No smoking"],
   ],
   "amenities": [
@@ -92,14 +103,5 @@ export const ConTiuSVGsMainPage = {
     [blackpool, "Swimming pool"],
   ]
 }
-
-// SVG Exports for Can Sabater
-
-export const CanSabaterSVGs = [
-  [whiteperson, 6],
-  [whitebed, 3],
-  [whitepool],
-  [whiteaircon],
-]
 
 export { default as Gravatar } from './base_media/gravatar.png';

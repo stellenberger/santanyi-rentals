@@ -1,4 +1,5 @@
 import React from 'react'
+import { PropertyDetails } from '../components'
 
 // Import S'Estador property photos
 import { 
@@ -152,7 +153,7 @@ export const CanSabaterPropertyDetailsBundle = {
     CanSabater22, 
     CanSabater23,
   ],
-  "detailsComponent": <CanSabaterPropertyDetails/>,
+  "detailsComponent": <PropertyDetails propertyInformation={CanSabaterPropertyDetails}/>,
   "bookings": CanSabaterBookings,
   "location": "Santanyi",
 }
@@ -196,7 +197,7 @@ export const EmbarcaderoPropertyDetailsBundle = {
     Embarcadero24,
     Embarcadero25,
   ],
-  "detailsComponent": <EmbarcaderoPropertyDetails/>,
+  "detailsComponent": <PropertyDetails propertyInformation={EmbarcaderoPropertyDetails}/>,
   "bookings": EmbarcaderoBookings,
   "location": "Cala Llombards",
 }
@@ -236,7 +237,7 @@ export const SEstadorsPropertyDetailsBundle = {
     SEstadors21, 
     SEstadors22,
   ],
-  "detailsComponent": <SEstadorsPropertyDetails/>,
+  "detailsComponent": <PropertyDetails propertyInformation={SEstadorsPropertyDetails}/>,
   "bookings": SEstadorsBookings,
   "location": "Santanyi",
 }
@@ -278,7 +279,7 @@ export const CanTiuPropertyDetailsBundle = {
     CanTiu21, 
     CanTiu22,
   ],
-  "detailsComponent": <CanTiuPropertyDetails/>,
+  "detailsComponent": <PropertyDetails propertyInformation={CanTiuPropertyDetails}/>,
   "bookings": CanTiuBookings,
   "location": "Santanyi",
 }

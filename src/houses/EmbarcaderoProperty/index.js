@@ -1,3 +1,46 @@
+import {
+  whiteaircon,
+  whiteairplanetakeoff,
+  whitebeachumbrella,
+  whitebed,
+  whitecar,
+  whitecocktail,
+  whitecoffee,
+  whitedollar,
+  whitefan,
+  whiteflower,
+  whiteinternet,
+  whiteknifefork,
+  whitelocationmark,
+  whitemail,
+  whitemountain,
+  whitenosmoking,
+  whiteperson,
+  whitephone,
+  whitepool,
+  whitewasher,
+  blackaircon,
+  blackairplanetakeoff,
+  blackbeachumbrella,
+  blackbed,
+  blackcar,
+  blackcocktail,
+  blackcoffee,
+  blackdollar,
+  blackfan,
+  blackflower,
+  blackinternet,
+  blackknifefork,
+  blacklocationmark,
+  blackmail,
+  blackmountain,
+  blacknosmoking,
+  blackperson,
+  blackphone,
+  blackpool,
+  blackwasher,
+} from '../../media/svgs'
+
 export { default as Embarcadero1 } from './Embarcadero 1.jpg'
 export { default as Embarcadero2 } from './Embarcadero 2.jpg'
 export { default as Embarcadero3 } from './Embarcadero 3.jpg'
@@ -24,5 +67,24 @@ export { default as Embarcadero23 } from './Embarcadero 23.jpg'
 export { default as Embarcadero24 } from './Embarcadero 24.jpg'
 export { default as Embarcadero25 } from './Embarcadero 25.jpg'
 
-export { default as EmbarcaderoPropertyDetails } from './EmbarcaderoPropertyDetails.jsx'
 export { default as EmbarcaderoBookings } from './bookings.json'
+
+export const EmbarcaderoPropertyDetails = {
+  "svgs": {
+    "information": [
+      [blackdollar, "250 per night"],
+      [blackperson, "7 People"],
+      [blackbed, "4 bedrooms"],
+      [blackairplanetakeoff, "40 min drive"],
+      [blackbeachumbrella, "10 min drive"],
+      [blacknosmoking, "No smoking"],
+    ],
+    "amenities": [
+      [blackaircon, "Aircon"],
+      [blackflower, "Spacious garden"],
+      [blackinternet, "Internet"],
+      [blackwasher, "Washing machine"],
+      [blackpool, "Swimming pool"],
+    ]
+  }
+}
