@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './PropertyTitleCard.module.scss'
 import { blacklocationmarker } from '../../media/svgs'
 
-export default function PropertyTitleCard({ property, gravatar }) {
+export default function PropertyTitleCard({ property }) {
   return (
     <div className={classes.propertyTitleCardContainer}>
       <span className={classes.title}>{property && property.id.toUpperCase()}</span>
@@ -10,7 +10,6 @@ export default function PropertyTitleCard({ property, gravatar }) {
         <img src={blacklocationmarker} alt="a white location marker" />
         <span>{property && property.location}</span>
       </div>
-      <img src={gravatar} alt="The property owner picture" />
     </div>
   )
 }

@@ -5,9 +5,7 @@ import classes from './Navbar.module.scss'
 
 const Ul = styled.ul`
     list-style: none;
-    width: 80vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
     padding: 0;
     a {
@@ -15,6 +13,14 @@ const Ul = styled.ul`
       color: white;
       font-size: 100%;
     };
+    li {
+      padding: 0 20px 0 20px;
+      border-left: 1px solid white;
+    }
+    li:first-child {
+      padding: 0 20px 0 0;
+      border: none;
+    }
     @media screen and (max-width: 1000px) {
       display: flex;
       flex-flow: column nowrap;
@@ -38,14 +44,24 @@ const Ul = styled.ul`
   `
 const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) => {
   return (
-    <div>
-      <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1>Santanyi Holiday Rentals</h1></Link>
-      <Ul open={open}>
-        <li><Link to='/embarcadero' onClick={() => changeColor(backgroundHeroImage)}><span className={classes.item}>Embarcadero</span></Link></li>
-        <li><Link to='/sestadors' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>S’Estadors</span></Link></li>
-        <li><Link to='/cantiu' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Tiu</span></Link></li>
-        <li><Link to='/cansabater' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Sabater</span></Link></li>
-      </Ul>
+    <div className={classes.rightnavContainer}>
+      <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1 className={classes.navTitle}>Santanyi Holiday Rentals</h1></Link>
+      <div className={classes.rightnavContent}>
+        <h2 style={{margin: 0, marginTop: 50}} className={classes.houseTitle}>Our houses</h2>
+        <div className={classes.houseNavigation}>
+          <Ul open={open}>
+            <li><Link to='/embarcadero' onClick={() => changeColor(backgroundHeroImage)}><span className={classes.item}>Embarcadero</span></Link></li>
+            <li><Link to='/sestadors' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>S’Estadors</span></Link></li>
+            <li><Link to='/cantiu' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Tiu</span></Link></li>
+            <li><Link to='/cansabater' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Sabater</span></Link></li>
+          </Ul>
+        </div>
+        <div className={classes.contact}>
+          <li>Explore Santanyi</li>
+          <li>Contact</li>
+          <li>Book</li>
+        </div>
+      </div>
     </div>
   )
 }
