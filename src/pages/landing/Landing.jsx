@@ -8,7 +8,7 @@ const Landing = () => {
     <div>
       <div className={classes.landingContainer}>
         <div className={classes.scrollMessageContainer}>
-          <div className={classes.explore}>Explore Santanyi</div>
+          <div className={classes.explore}><a href="#exploreContent">Explore Santanyi</a></div>
           <div className={classes.arrowDown} />
         </div>
       </div>

@@ -1,3 +1,13 @@
+@import '../../utils/variables';
+
 .exploreSantanyiContainer {
-  background-color: red;
+  background-color: white;
+  font-family: $site-font;
+  font-weight: bold;
+  min-height: 100vh;
+  .content {
+    color: black;
+    width: $normal-component-width;
+    margin: auto;
+  }
 }
