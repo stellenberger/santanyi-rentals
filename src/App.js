@@ -23,6 +23,7 @@ function App() {
     minHeight: '100vh',
     height: '100%',
     backgroundSize: 'cover',
+    backgroundAttachment: 'fixed'
   }
 
   const backgroundColor = {

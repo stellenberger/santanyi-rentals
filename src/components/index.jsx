@@ -6,3 +6,4 @@ export { default as PropertyCard } from './property_card/PropertyCard';
 export { default as PropertyTitleCard } from './property_title_card/PropertyTitleCard';
 export { default as PropertyDetails } from './property_details/PropertyDetails';
 export { default as SantanyiCalendar } from './calendar/SantanyiCalendar';
+export { default as ExploreSantanyi } from './explore_santanyi/ExploreSantanyi';
