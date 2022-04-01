@@ -1,16 +1,16 @@
 @import '../../utils/variables';
 
 .propertyContainer {
-  padding-top: 5vh;
   width: 80%;
   min-height: 95vh;
   margin: auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 0;
-  margin-top: 25px;
   grid-gap: 20px;
   z-index: 20;
+  background-color: white;
+  padding: 25px;
   .title {
     font-size: 40px;
   }

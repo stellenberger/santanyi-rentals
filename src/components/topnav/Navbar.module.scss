@@ -2,7 +2,6 @@
 
 .navbar {
   background-color: rgba(0,0,0, 0.6);
-  border-bottom: 3px solid black;
   font-family: $site-font;
   font-weight: bold;
   a {
@@ -28,6 +27,36 @@
       display: flex;
       margin: auto;
       height: 15vh;
+    }
+    .rightnavContainer {
+      .navTitle {
+        margin: 0;
+        letter-spacing: 5px;
+      }
+      .rightnavContent {
+        width: $normal-component-width;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .houseTitle {
+          grid-column: 1 / 3;
+        }
+        .contact {
+          display: flex;
+          justify-content: right;
+          list-style: none;
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+          align-items: center;
+          li {
+            border-left: 1px solid white;
+            padding: 0 20px 0 20px;
+            &:first-child {
+              border: none;
+            }
+          }
+        }
+      }
     }
   }
   .item {
