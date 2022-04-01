@@ -3,12 +3,16 @@ import classes from './Landing.module.scss';
 import { ExploreSantanyi } from '../../components';
 
 const Landing = () => {
-
+  const smoothScroll = () => {
+    document.querySelector('#exploreContent').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  }
   return (
     <div>
       <div className={classes.landingContainer}>
         <div className={classes.scrollMessageContainer}>
-          <div className={classes.explore}><a href="#exploreContent">Explore Santanyi</a></div>
+          <div className={classes.explore} onClick={smoothScroll}>Explore Santanyi</div>
           <div className={classes.arrowDown} />
         </div>
       </div>

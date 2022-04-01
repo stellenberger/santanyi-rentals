@@ -21,10 +21,7 @@
       font-family: $site-font;
       font-size: 30px;
       font-weight: bold;
-      a {
-        text-decoration: none;
-        color: white;
-      }
+      cursor: pointer;
     }
     .arrowDown {
       border: solid white;
