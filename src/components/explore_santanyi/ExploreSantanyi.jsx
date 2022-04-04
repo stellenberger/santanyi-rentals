@@ -6,6 +6,8 @@ import {
   Llombards,
   Mondrago
 } from '../../media'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 export default function ExploreSantanyi() {
   return (
@@ -31,7 +33,9 @@ export default function ExploreSantanyi() {
           <div className={classes.rowOne}>
             <div>
               <div className={classes.topBanner}>
-                Hello world I am the top banner
+                <span>
+                  <FontAwesomeIcon icon={faLocationDot} /><span>Cala Des Moro</span>
+                </span>
               </div>
               <img src={DesMoro} alt="Picture of Cala Des Moro" />
             </div>
@@ -44,7 +48,9 @@ export default function ExploreSantanyi() {
           <div className={classes.rowTwo}>
             <div>
               <div className={classes.topBanner}>
-                Hello world I am the top banner
+                <span>
+                  <FontAwesomeIcon icon={faLocationDot} /><span>Es Pontas</span>
+                </span>
               </div>
               <img src={EsPontas} alt="Picture of Es Pontas" />
             </div>
@@ -56,7 +62,9 @@ export default function ExploreSantanyi() {
           <div className={classes.rowTwo}>
             <div>
               <div className={classes.topBanner}>
-                Hello world I am the top banner
+                <span>
+                  <FontAwesomeIcon icon={faLocationDot} /><span>Cala Llombards</span>
+                </span>
               </div>
               <img src={Llombards} alt="Picture of Cala Llombards" />
             </div>
