@@ -3,25 +3,12 @@ import React, { useEffect, useState } from 'react';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 import { SantanyiCalendar, PropertyTitleCard } from '../../components'
-import { Gravatar } from '../../media'
 
-import { 
-  PropertyBundles
- } from '../../houses';
-
-export default function Property() {
-  const [properties, setProperties] = useState(PropertyBundles)
-  const [property, setProperty] = useState(null)
-
-  useEffect(() => {
-    let id = window.location.pathname.split('/')
-    properties && setProperty(properties.filter(property => property.id == id[id.length - 1])[0])
-  }, [])
-
+export default function Property({ property }) {
   return (
     <div className={classes.propertyContainer}>
       <div className={classes.contentContainer}>
-        <PropertyTitleCard property={property} gravatar={Gravatar} />
+        <PropertyTitleCard property={property} />
         {property && property.detailsComponent}
       </div>
       <div>

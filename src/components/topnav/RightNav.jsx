@@ -50,7 +50,7 @@ const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) =
         <h2 style={{margin: 0, marginTop: 50}} className={classes.houseTitle}>Our houses</h2>
         <div className={classes.houseNavigation}>
           <Ul open={open}>
-            <li><Link to='/embarcadero' onClick={() => changeColor(backgroundHeroImage)}><span className={classes.item}>Embarcadero</span></Link></li>
+            <li><Link to='/embarcadero' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Embarcadero</span></Link></li>
             <li><Link to='/sestadors' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>S’Estadors</span></Link></li>
             <li><Link to='/cantiu' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Tiu</span></Link></li>
             <li><Link to='/cansabater' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Sabater</span></Link></li>
