@@ -57,8 +57,7 @@ const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) =
           </Ul>
         </div>
         <div className={classes.contact}>
-          <li><Link to='/' onClick={() => changeColor(backgroundHeroImage)}>Explore Santanyi</Link></li>
-          <li><a href = "mailto: contact@santanyiholidayrentals.com">Contact</a></li>
+          <li><Link to='/' onClick={() => changeColor(backgroundHeroImage)}>Explore the South East</Link></li>
           <li>Book</li>
         </div>
       </div>

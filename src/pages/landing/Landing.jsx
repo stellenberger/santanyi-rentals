@@ -12,7 +12,7 @@ const Landing = () => {
     <div>
       <div className={classes.landingContainer}>
         <div className={classes.scrollMessageContainer}>
-          <div className={classes.explore} onClick={smoothScroll}>Explore Santanyi</div>
+          <div className={classes.explore} onClick={smoothScroll}>Explore the South East of Mallorca</div>
           <div className={classes.arrowDown} />
         </div>
       </div>
