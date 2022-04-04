@@ -51,7 +51,7 @@ export default function SantanyiCalendar({ bookings }) {
   }
 
   const dateTaken = (date) => {
-    return bookings[currentYear][months[currentMonth]].flat().includes(date.toString())
+    return bookings[currentYear] && bookings[currentYear][months[currentMonth]] && bookings[currentYear][months[currentMonth]].flat().includes(date.toString())
   }
 
   const handleNextYear = () => {
