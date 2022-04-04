@@ -1,45 +1,23 @@
-import {
-  whiteaircon,
-  whiteairplanetakeoff,
-  whitebeachumbrella,
-  whitebed,
-  whitecar,
-  whitecocktail,
-  whitecoffee,
-  whitedollar,
-  whitefan,
-  whiteflower,
-  whiteinternet,
-  whiteknifefork,
-  whitelocationmark,
-  whitemail,
-  whitemountain,
-  whitenosmoking,
-  whiteperson,
-  whitephone,
-  whitepool,
-  whitewasher,
-  blackaircon,
-  blackairplanetakeoff,
-  blackbeachumbrella,
-  blackbed,
-  blackcar,
-  blackcocktail,
-  blackcoffee,
-  blackdollar,
-  blackfan,
-  blackflower,
-  blackinternet,
-  blackknifefork,
-  blacklocationmark,
-  blackmail,
-  blackmountain,
-  blacknosmoking,
-  blackperson,
-  blackphone,
-  blackpool,
-  blackwasher,
-} from '../../media/svgs'
+import React from 'react'
+import { 
+  FaUserAlt,
+  FaSwimmingPool,
+  FaWifi,
+  FaPlaneArrival,
+  FaUmbrellaBeach,
+} from 'react-icons/fa';
+import { 
+  BiEuro,
+  BiBed,
+} from 'react-icons/bi';
+import { 
+  MdSmokeFree,
+} from 'react-icons/md';
+import { 
+  GiThermometerCold,
+  GiFlowers,
+  GiWashingMachine,
+} from 'react-icons/gi';
 
 import { CanTiuInfo } from '.'
 
@@ -77,19 +55,19 @@ export const CanTiuPropertyDetails = {
   "details": CanTiuInfo,
   "svgs": {
     "information": [
-      [blackdollar, "250 per night"],
-      [blackperson, "7 People"],
-      [blackbed, "4 bedrooms"],
-      [blackairplanetakeoff, "40 min drive"],
-      [blackbeachumbrella, "10 min drive"],
-      [blacknosmoking, "No smoking"],
+      [<BiEuro/>, "250 per night"],
+      [<FaUserAlt/>, "7 People"],
+      [<BiBed/>, "4 bedrooms"],
+      [<FaPlaneArrival/>, "40 min drive"],
+      [<FaUmbrellaBeach/>, "10 min drive"],
+      [<MdSmokeFree/>, "No smoking"],
     ],
     "amenities": [
-      [blackaircon, "Aircon"],
-      [blackflower, "Spacious garden"],
-      [blackinternet, "Internet"],
-      [blackwasher, "Washing machine"],
-      [blackpool, "Swimming pool"],
+      [<GiThermometerCold/>, "Aircon"],
+      [<GiFlowers/>, "Spacious garden"],
+      [<FaWifi/>, "Internet"],
+      [<GiWashingMachine/>, "Washing machine"],
+      [<FaSwimmingPool/>, "Swimming pool"],
     ]
   }
 }

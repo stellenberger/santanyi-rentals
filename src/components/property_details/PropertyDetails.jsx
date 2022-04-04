@@ -13,7 +13,7 @@ export default function PropertyDetails({ propertyInformation }) {
           {propertyInformation.svgs.information.map((sec, index) => {
             return (
               <div key={index} className={classes.svgContainer}>
-                <img src={sec[0]} alt="Svg" className={classes.svgs} />
+                {sec[0]}
                 <span className={classes.svgDescription}>{sec[1]}</span>
               </div>
             )
@@ -24,7 +24,7 @@ export default function PropertyDetails({ propertyInformation }) {
           {propertyInformation.svgs.amenities.map((sec, index) => {
             return (
               <div key={index} className={classes.svgContainer}>
-                <img src={sec[0]} alt="Svg" className={classes.svgs} />
+                {sec[0]}
                 <span className={classes.svgDescription}>{sec[1]}</span>
               </div>
             )
