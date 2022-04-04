@@ -3,25 +3,12 @@ import React, { useEffect, useState } from 'react';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 import { SantanyiCalendar, PropertyTitleCard } from '../../components'
-import { Gravatar } from '../../media'
 
-import { 
-  PropertyBundles
- } from '../../houses';
-
-export default function Property() {
-  const [properties, setProperties] = useState(PropertyBundles)
-  const [property, setProperty] = useState(null)
-
-  useEffect(() => {
-    let id = window.location.pathname.split('/')
-    properties && setProperty(properties.filter(property => property.id == id[id.length - 1])[0])
-  }, [])
-
+export default function Property({ property }) {
   return (
     <div className={classes.propertyContainer}>
       <div className={classes.contentContainer}>
-        <PropertyTitleCard property={property} gravatar={Gravatar} />
+        <PropertyTitleCard property={property} />
         {property && property.detailsComponent}
       </div>
       <div>
@@ -33,17 +20,19 @@ export default function Property() {
               currentSlide={0}
             >
             <Slider>
-              { property && property.images.map(img => {
-                return (<Slide index={property.images.indexOf(img)}>
-                  <span className={classes.imageContainer}>
-                    <img src={img} alt={`photos of ${property.id} property`} />
-                  </span>
-                </Slide>)
+              { property && property.images.map((img, index) => {
+                return (
+                  <Slide key={index} index={property.images.indexOf(img)}>
+                    <span className={classes.imageContainer}>
+                      <img src={img} alt={`photos of ${property.id} property`} />
+                    </span>
+                  </Slide>
+                )
               })}
             </Slider>
             <DotGroup className={classes.dotGroup} />
-            <ButtonBack className={classes.buttonBack}><i class={classes.left} /></ButtonBack>
-            <ButtonNext className={classes.buttonNext}><i class={classes.right} /></ButtonNext>
+            <ButtonBack className={classes.buttonBack}><i className={classes.left} /></ButtonBack>
+            <ButtonNext className={classes.buttonNext}><i className={classes.right} /></ButtonNext>
           </CarouselProvider>
         </div>
         <div className={classes.calendarContainer} >

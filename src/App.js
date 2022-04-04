@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom';
 import classes from './App.module.scss';
 import { 
   TopNavigation,
@@ -12,6 +12,9 @@ import {
 import { 
   CalaLlombards,
 } from './media'
+import { 
+  PropertyBundles
+ } from './houses';
 
 import ReactGa from 'react-ga'
 
@@ -23,6 +26,7 @@ function App() {
     minHeight: '100vh',
     height: '100%',
     backgroundSize: 'cover',
+    backgroundAttachment: 'fixed'
   }
 
   const backgroundColor = {
@@ -45,6 +49,10 @@ function App() {
     }
   }
 
+  const changeColor = (color) => {
+    setBackground(color)
+  }
+
   useEffect(() => {
     styling()
     ReactGa.initialize('PUT YOUR GOOGLE ANALYTICS CODE HERE')
@@ -56,10 +64,10 @@ function App() {
   return (
     <div className={classes.App} style={background}>
       <BrowserRouter>
-        <TopNavigation />
+        <TopNavigation changeColor={changeColor} backgroundColor={backgroundColor} backgroundHeroImage={backgroundHeroImage} />
         <Routes>
           <Route exact path='/' element={<Landing/>} />
-          <Route exact path='/:id' element={<Property/>} />
+          <Route exact path='/:id' element={<Property property={PropertyBundles.filter(p => p.id == window.location.pathname.split('/')[1])[0]} />} />
         </Routes>
       </BrowserRouter>
     </div>

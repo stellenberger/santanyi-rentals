@@ -5,14 +5,14 @@ export default function PropertyDetails({ propertyInformation }) {
   return (
     <div className={classes.propertyContainer}>
       <div className={classes.about}>
-        <i>“Just two minutes walking from the central square of Santanyi”</i>
+        <i>“{propertyInformation.blurb}”</i>
       </div>
       <div className={classes.amenitiesContainer}>
         <div className={classes.information}>
           <h1>Information</h1>
-          {propertyInformation.svgs.information.map(sec => {
+          {propertyInformation.svgs.information.map((sec, index) => {
             return (
-              <div className={classes.svgContainer}>
+              <div key={index} className={classes.svgContainer}>
                 <img src={sec[0]} alt="Svg" className={classes.svgs} />
                 <span className={classes.svgDescription}>{sec[1]}</span>
               </div>
@@ -21,9 +21,9 @@ export default function PropertyDetails({ propertyInformation }) {
         </div>
         <div className={classes.amenities}>
           <h1>Amenities</h1>
-          {propertyInformation.svgs.amenities.map(sec => {
+          {propertyInformation.svgs.amenities.map((sec, index) => {
             return (
-              <div className={classes.svgContainer}>
+              <div key={index} className={classes.svgContainer}>
                 <img src={sec[0]} alt="Svg" className={classes.svgs} />
                 <span className={classes.svgDescription}>{sec[1]}</span>
               </div>
@@ -34,7 +34,7 @@ export default function PropertyDetails({ propertyInformation }) {
       <div className={classes.buttons}>          
         <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.button}>More details</a>
         <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.button}>Floorplan</a>
-        <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.requestBooking}>Request a booking</a>
+        <a href = {`mailto: ${propertyInformation.email}`} className={classes.requestBooking}>Request a booking</a>
       </div>
     </div>
   )

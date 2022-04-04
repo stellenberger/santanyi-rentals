@@ -51,7 +51,7 @@ export default function SantanyiCalendar({ bookings }) {
   }
 
   const dateTaken = (date) => {
-    return bookings[currentYear][months[currentMonth]].flat().includes(date.toString())
+    return bookings[currentYear] && bookings[currentYear][months[currentMonth]] && bookings[currentYear][months[currentMonth]].flat().includes(date.toString())
   }
 
   const handleNextYear = () => {
@@ -116,8 +116,8 @@ export default function SantanyiCalendar({ bookings }) {
       </ul>
 
       <ul className={classes.days}>
-        { precedingDays.map(day => <li></li>) }
-        { totalDateRange && totalDateRange.map(date => <li style={getDateStyling(date)}><span>{date}</span></li>)}
+        { precedingDays.map((day, index) => <li key={index}></li>) }
+        { totalDateRange && totalDateRange.map((date, index) => <li key={index} style={getDateStyling(date)}><span>{date}</span></li>)}
       </ul>
     </div>
   )

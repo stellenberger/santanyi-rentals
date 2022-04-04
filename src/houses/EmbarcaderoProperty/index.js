@@ -70,6 +70,8 @@ export { default as Embarcadero25 } from './Embarcadero 25.jpg'
 export { default as EmbarcaderoBookings } from './bookings.json'
 
 export const EmbarcaderoPropertyDetails = {
+  "blurb": "A stones throw from Cala Llombards beach",
+  "email": "lauraellenberger63@gmail.com",
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],
