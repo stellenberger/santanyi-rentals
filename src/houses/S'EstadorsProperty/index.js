@@ -41,6 +41,10 @@ import {
   blackwasher,
 } from '../../media/svgs'
 
+import { SestadorsInfo } from '.'
+
+export { default as SestadorsInfo } from './sestadorsInfo.pdf'
+
 export { default as SEstadors2 } from './S\'Estadors 2.jpg'
 export { default as SEstadors3 } from './S\'Estadors 3.jpg'
 export { default as SEstadors4 } from './S\'Estadors 4.jpg'
@@ -68,6 +72,8 @@ export { default as SEstadorsBookings } from './bookings.json'
 export const SEstadorsPropertyDetails = {
   "blurb": "Just two minutes walking from the central square of Santanyi",
   "email": "antonirigo@gmail.com",
+  "floorplan": "unavailable",
+  "details": SestadorsInfo,
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],

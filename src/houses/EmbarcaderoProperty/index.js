@@ -1,3 +1,4 @@
+import { EmbarcaderoFloorplan } from '.'
 import {
   whiteaircon,
   whiteairplanetakeoff,
@@ -69,9 +70,12 @@ export { default as Embarcadero25 } from './Embarcadero 25.jpg'
 
 export { default as EmbarcaderoBookings } from './bookings.json'
 
+export { default as EmbarcaderoFloorplan } from './embarcaderoFloorplan.pdf'
+
 export const EmbarcaderoPropertyDetails = {
   "blurb": "A stones throw from Cala Llombards beach",
   "email": "lauraellenberger63@gmail.com",
+  "floorplan": EmbarcaderoFloorplan,
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],

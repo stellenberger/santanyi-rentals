@@ -25,10 +25,16 @@
     .prev {
       float: left;
       padding: 10px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .next {
       float: right;
       padding: 10px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   

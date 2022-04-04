@@ -41,6 +41,10 @@ import {
   blackwasher,
 } from '../../media/svgs'
 
+import { CanTiuInfo } from '.'
+
+export { default as CanTiuInfo } from './cantiuInfo.pdf'
+
 export { default as CanTiu1 } from './Can Tiu 1.jpg'
 export { default as CanTiu2 } from './Can Tiu 2.jpg'
 export { default as CanTiu3 } from './Can Tiu 3.jpg'
@@ -69,6 +73,8 @@ export { default as CanTiuBookings } from './bookings.json'
 export const CanTiuPropertyDetails = {
   "blurb": "Just two minutes walking from the central square of Santanyi",
   "email": "antonirigo@gmail.com",
+  "floorplan": "unavailable",
+  "details": CanTiuInfo,
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],

@@ -41,6 +41,10 @@ import {
   blackwasher,
 } from '../../media/svgs'
 
+import { CanSabaterInfo } from '.'
+
+export { default as CanSabaterInfo } from './cansabaterInfo.pdf'
+ 
 export { default as CanSabater1 } from './Can Sabater 1.jpg'
 export { default as CanSabater2 } from './Can Sabater 2.jpg'
 export { default as CanSabater3 } from './Can Sabater 3.jpg'
@@ -69,6 +73,8 @@ export { default as CanSabaterBookings } from './bookings.json'
 export const CanSabaterPropertyDetails = {
   "blurb": "Just two minutes walking from the central square of Santanyi",
   "email": "antonirigo@gmail.com",
+  "floorplan": "unavailable",
+  "details": CanSabaterInfo,
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],

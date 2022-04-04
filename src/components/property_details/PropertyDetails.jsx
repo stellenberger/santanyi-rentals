@@ -32,9 +32,9 @@ export default function PropertyDetails({ propertyInformation }) {
         </div>
       </div>
       <div className={classes.buttons}>          
-        <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.button}>More details</a>
-        <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.button}>Floorplan</a>
-        <a href = {`mailto: ${propertyInformation.email}`} className={classes.requestBooking}>Request a booking</a>
+        <a href={propertyInformation.details} className={classes.button}>More details</a>
+        <a href={propertyInformation.floorplan} className={classes.button}>Floorplan</a>
+        <a href={`mailto: ${propertyInformation.email}`} className={classes.requestBooking}>Request a booking</a>
       </div>
     </div>
   )
