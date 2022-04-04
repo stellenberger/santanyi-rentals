@@ -66,6 +66,8 @@ export { default as SEstadors22 } from './S\'Estadors 22.jpg'
 export { default as SEstadorsBookings } from './bookings.json'
 
 export const SEstadorsPropertyDetails = {
+  "blurb": "Just two minutes walking from the central square of Santanyi",
+  "email": "antonirigo@gmail.com",
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],

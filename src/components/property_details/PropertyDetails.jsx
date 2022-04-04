@@ -5,7 +5,7 @@ export default function PropertyDetails({ propertyInformation }) {
   return (
     <div className={classes.propertyContainer}>
       <div className={classes.about}>
-        <i>“Just two minutes walking from the central square of Santanyi”</i>
+        <i>“{propertyInformation.blurb}”</i>
       </div>
       <div className={classes.amenitiesContainer}>
         <div className={classes.information}>
@@ -34,7 +34,7 @@ export default function PropertyDetails({ propertyInformation }) {
       <div className={classes.buttons}>          
         <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.button}>More details</a>
         <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.button}>Floorplan</a>
-        <a href = "mailto: contact@santanyiholidayrentals.com" className={classes.requestBooking}>Request a booking</a>
+        <a href = {`mailto: ${propertyInformation.email}`} className={classes.requestBooking}>Request a booking</a>
       </div>
     </div>
   )

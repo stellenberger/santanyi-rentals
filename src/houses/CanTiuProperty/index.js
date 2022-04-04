@@ -67,6 +67,8 @@ export { default as CanTiu22 } from './Can Tiu 22.jpg'
 export { default as CanTiuBookings } from './bookings.json'
 
 export const CanTiuPropertyDetails = {
+  "blurb": "Just two minutes walking from the central square of Santanyi",
+  "email": "antonirigo@gmail.com",
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],

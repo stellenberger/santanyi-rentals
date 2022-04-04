@@ -67,6 +67,8 @@ export { default as CanSabater23 } from './Can Sabater 23.jpg'
 export { default as CanSabaterBookings } from './bookings.json'
 
 export const CanSabaterPropertyDetails = {
+  "blurb": "Just two minutes walking from the central square of Santanyi",
+  "email": "antonirigo@gmail.com",
   "svgs": {
     "information": [
       [blackdollar, "250 per night"],
