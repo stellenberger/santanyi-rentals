@@ -10,9 +10,9 @@ export default function PropertyDetails({ propertyInformation }) {
       <div className={classes.amenitiesContainer}>
         <div className={classes.information}>
           <h1>Information</h1>
-          {propertyInformation.svgs.information.map(sec => {
+          {propertyInformation.svgs.information.map((sec, index) => {
             return (
-              <div className={classes.svgContainer}>
+              <div key={index} className={classes.svgContainer}>
                 <img src={sec[0]} alt="Svg" className={classes.svgs} />
                 <span className={classes.svgDescription}>{sec[1]}</span>
               </div>
@@ -21,9 +21,9 @@ export default function PropertyDetails({ propertyInformation }) {
         </div>
         <div className={classes.amenities}>
           <h1>Amenities</h1>
-          {propertyInformation.svgs.amenities.map(sec => {
+          {propertyInformation.svgs.amenities.map((sec, index) => {
             return (
-              <div className={classes.svgContainer}>
+              <div key={index} className={classes.svgContainer}>
                 <img src={sec[0]} alt="Svg" className={classes.svgs} />
                 <span className={classes.svgDescription}>{sec[1]}</span>
               </div>
