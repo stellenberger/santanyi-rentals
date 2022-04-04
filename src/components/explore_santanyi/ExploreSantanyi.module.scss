@@ -5,9 +5,33 @@
   font-family: $site-font;
   font-weight: bold;
   min-height: 100vh;
+  margin-bottom: 100px;
   .content {
     color: black;
     width: $normal-component-width;
     margin: auto;
+    .mainBlurb {
+      padding-top: 10vh;
+    }
+    .sectionsGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .rowOne {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        grid-column: 1 / 3;
+        padding: 50px;
+      }
+      .rowTwo {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+      }
+    }
   }
 }
