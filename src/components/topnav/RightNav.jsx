@@ -17,7 +17,7 @@ const Ul = styled.ul`
       height: 100vh;
       width: 100vw;
       padding-top: 10rem;
-      margin: 0;
+      margin: auto;
       transition: transform 0.3s ease-in-out;
       li {
         padding-top: 10vh;
@@ -39,8 +39,8 @@ const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) =
             <li><Link to='/cansabater' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Can Sabater</span></Link></li>
           </div>
           <div className={classes.contact}>
-            <li><Link to='/' onClick={() => changeColor(backgroundHeroImage)}>Explore the South East</Link></li>
-            <li>Book</li>
+            <li><Link to='/' onClick={() => changeColor(backgroundHeroImage)} className={classes.item}>Explore the South East</Link></li>
+            <li className={classes.item}>Book</li>
           </div>
         </div>
       </Ul>
