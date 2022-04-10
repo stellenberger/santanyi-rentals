@@ -31,7 +31,7 @@ export default function ExploreSantanyi() {
         </div>
         <div className={classes.sectionsGrid}>
           <div className={classes.rowOne}>
-            <div>
+            <div className={classes.informationSection}>
               <div className={classes.topBanner}>
                 <span>
                   <FontAwesomeIcon icon={faLocationDot} /><span>Cala Des Moro</span>
@@ -46,7 +46,7 @@ export default function ExploreSantanyi() {
             </span>
           </div>
           <div className={classes.rowTwo}>
-            <div>
+            <div className={classes.informationSection}>
               <div className={classes.topBanner}>
                 <span>
                   <FontAwesomeIcon icon={faLocationDot} /><span>Es Pontas</span>
@@ -60,7 +60,7 @@ export default function ExploreSantanyi() {
             </span>
           </div>
           <div className={classes.rowTwo}>
-            <div>
+            <div className={classes.informationSection}>
               <div className={classes.topBanner}>
                 <span>
                   <FontAwesomeIcon icon={faLocationDot} /><span>Cala Llombards</span>

@@ -18,7 +18,6 @@ const Landing = () => {
       </div>
       <ExploreSantanyi />
     </div>
-
   )
 }
 
