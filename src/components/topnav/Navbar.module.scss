@@ -37,6 +37,25 @@
         width: $normal-component-width;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        .houseNavigation {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          padding: 0;
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 100%;
+          };
+          li {
+            padding: 0 20px 0 20px;
+            border-left: 1px solid white;
+          }
+          li:first-child {
+            padding: 0 20px 0 0;
+            border: none;
+          }
+        }
         .houseTitle {
           grid-column: 1 / 3;
         }
