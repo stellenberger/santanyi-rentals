@@ -28,8 +28,8 @@ const Ul = styled.ul`
 const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) => {
   return (
     <div className={classes.rightnavContainer}>
+      <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1 className={classes.navTitle}>Santanyi Holiday Rentals</h1></Link>
       <Ul open={open}>
-        <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1 className={classes.navTitle}>Santanyi Holiday Rentals</h1></Link>
         <div className={classes.rightnavContent}>
           <h2 style={{margin: 0, marginTop: 50}} className={classes.houseTitle}>Our houses</h2>
           <div className={classes.houseNavigation}>
