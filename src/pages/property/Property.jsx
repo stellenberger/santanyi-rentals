@@ -1,13 +1,16 @@
 import classes from './Property.module.scss';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, DotGroup, Slide, Slider, ButtonNext, ButtonBack } from "pure-react-carousel";
 import { SantanyiCalendar, PropertyTitleCard } from '../../components'
+import { ImArrowLeft } from 'react-icons/im';
 
-export default function Property({ property }) {
+export default function Property({ changeColor, backgroundHeroImage, property }) {
   return (
     <div className={classes.propertyContainer}>
       <div className={classes.contentContainer}>
+        <Link to="/" className={classes.backButton} onClick={() => changeColor(backgroundHeroImage)}><ImArrowLeft/> Go back</Link>
         <PropertyTitleCard property={property} />
         {property && property.detailsComponent}
       </div>

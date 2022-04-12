@@ -25,7 +25,7 @@ const Ul = styled.ul`
       }
     }
   `
-const RightNav = ({ changeColor, backgroundColor, backgroundHeroImage, open }) => {
+const RightNav = ({ changeColor, backgroundHeroImage, backgroundColor, open }) => {
   return (
     <div className={classes.rightnavContainer}>
       <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1 className={classes.navTitle}>Santanyi Holiday Rentals</h1></Link>

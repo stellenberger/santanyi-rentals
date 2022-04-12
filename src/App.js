@@ -67,7 +67,7 @@ function App() {
         <TopNavigation changeColor={changeColor} backgroundColor={backgroundColor} backgroundHeroImage={backgroundHeroImage} />
         <Routes>
           <Route exact path='/' element={<Landing/>} />
-          <Route exact path='/:id' element={<Property property={PropertyBundles.filter(p => p.id == window.location.pathname.split('/')[1])[0]} />} />
+          <Route exact path='/:id' element={<Property changeColor={changeColor} backgroundHeroImage={backgroundHeroImage} property={PropertyBundles.filter(p => p.id == window.location.pathname.split('/')[1])[0]} />} />
         </Routes>
       </BrowserRouter>
     </div>
