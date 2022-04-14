@@ -49,24 +49,24 @@ export { default as CanSabater23 } from './Can Sabater 23.jpg'
 export { default as CanSabaterBookings } from './bookings.json'
 
 export const CanSabaterPropertyDetails = {
-  "blurb": "Just two minutes walking from the central square of Santanyi",
+  "blurb": "5 minutes from Mondrago National Park",
   "email": "antonirigo@gmail.com",
   "floorplan": "unavailable",
   "details": CanSabaterInfo,
   "svgs": {
     "information": [
-      [<BiEuro/>, "250 per night"],
-      [<FaUserAlt/>, "7 People"],
-      [<BiBed/>, "4 bedrooms"],
+      [<BiEuro/>, "150 - 240 (seasonal)"],
+      [<FaUserAlt/>, "6 People"],
+      [<BiBed/>, "3 bedrooms"],
       [<FaPlaneArrival/>, "40 min drive"],
-      [<FaUmbrellaBeach/>, "10 min drive"],
+      [<FaUmbrellaBeach/>, "5 min drive"],
       [<MdSmokeFree/>, "No smoking"],
     ],
     "amenities": [
       [<GiThermometerCold/>, "Aircon"],
-      [<GiFlowers/>, "Spacious garden"],
+      [<GiFlowers/>, "Spacious garden with grill"],
       [<FaWifi/>, "Internet"],
-      [<GiWashingMachine/>, "Washing machine"],
+      [<GiWashingMachine/>, "Washing machine + dryer"],
       [<FaSwimmingPool/>, "Swimming pool"],
     ]
   }

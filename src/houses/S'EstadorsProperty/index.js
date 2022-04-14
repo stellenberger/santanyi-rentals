@@ -48,17 +48,17 @@ export { default as SEstadors22 } from './S\'Estadors 22.jpg'
 export { default as SEstadorsBookings } from './bookings.json'
 
 export const SEstadorsPropertyDetails = {
-  "blurb": "Just two minutes walking from the central square of Santanyi",
+  "blurb": "Between the town and the country",
   "email": "antonirigo@gmail.com",
   "floorplan": "unavailable",
   "details": SestadorsInfo,
   "svgs": {
     "information": [
-      [<BiEuro/>, "250 per night"],
-      [<FaUserAlt/>, "7 People"],
-      [<BiBed/>, "4 bedrooms"],
+      [<BiEuro/>, "120 - 180 (seasonal)"],
+      [<FaUserAlt/>, "2 People"],
+      [<BiBed/>, "1 bedroom"],
       [<FaPlaneArrival/>, "40 min drive"],
-      [<FaUmbrellaBeach/>, "10 min drive"],
+      [<FaUmbrellaBeach/>, "15 min drive"],
       [<MdSmokeFree/>, "No smoking"],
     ],
     "amenities": [

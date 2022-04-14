@@ -56,18 +56,17 @@ export const CanTiuPropertyDetails = {
   "svgs": {
     "information": [
       [<BiEuro/>, "250 per night"],
-      [<FaUserAlt/>, "7 People"],
-      [<BiBed/>, "4 bedrooms"],
+      [<FaUserAlt/>, "4 People"],
+      [<BiBed/>, "2 bedrooms"],
       [<FaPlaneArrival/>, "40 min drive"],
       [<FaUmbrellaBeach/>, "10 min drive"],
       [<MdSmokeFree/>, "No smoking"],
     ],
     "amenities": [
-      [<GiThermometerCold/>, "Aircon"],
-      [<GiFlowers/>, "Spacious garden"],
+      [<GiThermometerCold/>, "Aircon + Heating"],
+      [<GiFlowers/>, "Garden"],
       [<FaWifi/>, "Internet"],
       [<GiWashingMachine/>, "Washing machine"],
-      [<FaSwimmingPool/>, "Swimming pool"],
     ]
   }
 }
