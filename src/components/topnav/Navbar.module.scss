@@ -39,11 +39,12 @@
       .navTitle {
         margin: 0;
         letter-spacing: 5px;
+        line-height: 20px;
+        padding-top: 10px;
       }
       .rightnavContent {
         width: $normal-component-width;
         display: grid;
-        grid-template-columns: 1fr 1fr;
         @media screen and (max-width: $medium) {
           display: block;
           margin: 20vh auto 0 auto;

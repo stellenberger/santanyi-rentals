@@ -31,7 +31,7 @@ const RightNav = ({ changeColor, backgroundHeroImage, backgroundColor, open }) =
       <Link to='/' onClick={() => changeColor(backgroundHeroImage)}><h1 className={classes.navTitle}>Santanyi Holiday Rentals</h1></Link>
       <Ul open={open}>
         <div className={classes.rightnavContent}>
-          <h2 style={{margin: 0, marginTop: 50}} className={classes.houseTitle}>Our houses</h2>
+          <h2 style={{margin: 0}} className={classes.houseTitle}>Our houses</h2>
           <div className={classes.houseNavigation}>
             <li><Link to='/embarcadero' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>Embarcadero</span></Link></li>
             <li><Link to='/sestadors' onClick={() => changeColor(backgroundColor)}><span className={classes.item}>S’Estadors</span></Link></li>
