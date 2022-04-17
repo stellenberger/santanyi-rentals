@@ -56,7 +56,7 @@ export const EmbarcaderoPropertyDetails = {
   "floorplan": EmbarcaderoFloorplan,
   "svgs": {
     "information": [
-      [<BiEuro/>, "250 per night"],
+      [<BiEuro/>, "280-330 per night"],
       [<FaUserAlt/>, "7 People"],
       [<BiBed/>, "4 bedrooms"],
       [<FaPlaneArrival/>, "40 min drive"],
