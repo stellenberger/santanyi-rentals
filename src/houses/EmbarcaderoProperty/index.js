@@ -19,6 +19,9 @@ import {
   GiWashingMachine,
 } from 'react-icons/gi';
 import { EmbarcaderoFloorplan } from '.'
+import { 
+  AiFillCar,
+} from 'react-icons/ai';
 
 export { default as Embarcadero1 } from './Embarcadero 1.jpg'
 export { default as Embarcadero2 } from './Embarcadero 2.jpg'
@@ -57,18 +60,17 @@ export const EmbarcaderoPropertyDetails = {
   "svgs": {
     "information": [
       [<BiEuro/>, "280-330 per night"],
-      [<FaUserAlt/>, "7 People"],
+      [<FaUserAlt/>, "8 People"],
       [<BiBed/>, "4 bedrooms"],
       [<FaPlaneArrival/>, "40 min drive"],
-      [<FaUmbrellaBeach/>, "10 min drive"],
+      [<FaUmbrellaBeach/>, "30 second walk"],
       [<MdSmokeFree/>, "No smoking"],
     ],
     "amenities": [
-      [<GiThermometerCold/>, "Aircon"],
       [<GiFlowers/>, "Spacious garden"],
       [<FaWifi/>, "Internet"],
       [<GiWashingMachine/>, "Washing machine"],
-      [<FaSwimmingPool/>, "Swimming pool"],
+      [<AiFillCar/>, "Off street parking"],
     ]
   }
 }
