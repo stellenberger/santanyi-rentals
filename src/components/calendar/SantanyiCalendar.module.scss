@@ -12,6 +12,9 @@
     margin: auto;
     text-align: center;
     padding: 10px 0 10px 0;
+    @media (max-width: $medium) {
+      width: 80%;
+    }
     ul {
       margin: 0;
       padding: 0;

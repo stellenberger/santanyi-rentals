@@ -39,7 +39,7 @@ export default function ExploreSantanyi() {
               </div>
               <img src={DesMoro} alt="Picture of Cala Des Moro" />
             </div>
-            <span>
+            <span className={classes.information}>
               A hidden gem around the corner of Cala Llombards and a few minutes drive (or cycle!) from Santanyi
               lies the idyllic cove of Cala Des Moro. Be sure to take a swim or a leisurely stroll around this beautiful beach
               when visiting this part of the island. 
@@ -54,7 +54,7 @@ export default function ExploreSantanyi() {
               </div>
               <img src={EsPontas} alt="Picture of Es Pontas" />
             </div>
-            <span>
+            <span  className={classes.information}>
               "Es Pontas" translates to "The Bridge" in Catalan, and you can see why. An epic feat of nature, it's swimmable from 
               either Cala Llombards or Cala Santanyi, where you will find an array of fish and other wildlife calling the bridge home.
             </span>
@@ -68,7 +68,7 @@ export default function ExploreSantanyi() {
               </div>
               <img src={Llombards} alt="Picture of Cala Llombards" />
             </div>
-            <span>
+            <span  className={classes.information}>
               Cala Llombards; one of the most picturesque beaches on the island. Whats even better is that every year, from May to October, the local
               Chiringuito is open, serving all things from fresh seafood to ice cold beverages. A day at the beach has never been more handsome. 
             </span>

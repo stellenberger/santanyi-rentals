@@ -11,11 +11,10 @@
     margin-top: 2vh;
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    .information {
-      // background-color: blue;
-    }
-    .ameneties {
-      // background-color: red;
+    h1 {
+      @media (max-width: $medium) {
+        font-size: 25px;
+      }
     }
     .svgContainer {
       display: flex;
