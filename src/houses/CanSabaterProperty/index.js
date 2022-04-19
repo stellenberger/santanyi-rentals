@@ -49,6 +49,7 @@ export { default as CanSabater23 } from './Can Sabater 23.jpg'
 export { default as CanSabaterBookings } from './bookings.json'
 
 export const CanSabaterPropertyDetails = {
+  "name": "cansabater",
   "blurb": "5 minutes from Mondrago National Park",
   "email": "antonirigo@gmail.com",
   "floorplan": "unavailable",

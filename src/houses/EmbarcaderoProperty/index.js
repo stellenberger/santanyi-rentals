@@ -54,6 +54,7 @@ export { default as EmbarcaderoBookings } from './bookings.json'
 export { default as EmbarcaderoFloorplan } from './embarcaderoFloorplan.pdf'
 
 export const EmbarcaderoPropertyDetails = {
+  "name": "embarcadero",
   "blurb": "A stones throw from Cala Llombards beach",
   "email": "lauraellenberger63@gmail.com",
   "floorplan": EmbarcaderoFloorplan,

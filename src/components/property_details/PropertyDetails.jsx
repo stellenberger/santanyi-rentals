@@ -32,8 +32,8 @@ export default function PropertyDetails({ propertyInformation }) {
         </div>
       </div>
       <div className={classes.buttons}>          
-        <a href={propertyInformation.details} className={classes.button} download="floorplan">More details</a>
-        <a href={propertyInformation.floorplan} className={classes.button} download="floorplan">Floorplan</a>
+        <a href={propertyInformation.details} className={classes.button} download={`extended_details_${propertyInformation.name}`}>More details</a>
+        <a href={propertyInformation.floorplan} className={classes.button} download={`floorplan_${propertyInformation.name}`}>Floorplan</a>
         <a href={`mailto: ${propertyInformation.email}`} className={classes.requestBooking}>Request a booking</a>
       </div>
     </div>

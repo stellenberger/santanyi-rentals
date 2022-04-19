@@ -20,8 +20,10 @@ import {
 } from 'react-icons/gi';
 
 import { SestadorsInfo } from '.'
+import { SestadorsFloorplan } from '.'
 
 export { default as SestadorsInfo } from './sestadorsInfo.pdf'
+export { default as SestadorsFloorplan } from './sestadors_floorplan.pdf'
 
 export { default as SEstadors2 } from './S\'Estadors 2.jpg'
 export { default as SEstadors3 } from './S\'Estadors 3.jpg'
@@ -48,9 +50,10 @@ export { default as SEstadors22 } from './S\'Estadors 22.jpg'
 export { default as SEstadorsBookings } from './bookings.json'
 
 export const SEstadorsPropertyDetails = {
+  "name": "sestadors",
   "blurb": "Between the town and the country",
   "email": "antonirigo@gmail.com",
-  "floorplan": "unavailable",
+  "floorplan": SestadorsFloorplan,
   "details": SestadorsInfo,
   "svgs": {
     "information": [

@@ -20,8 +20,10 @@ import {
 } from 'react-icons/gi';
 
 import { CanTiuInfo } from '.'
+import { CanTiuFloorplan } from '.'
 
 export { default as CanTiuInfo } from './cantiuInfo.pdf'
+export { default as CanTiuFloorplan } from './cantiu_floorplan.pdf'
 
 export { default as CanTiu1 } from './Can Tiu 1.jpg'
 export { default as CanTiu2 } from './Can Tiu 2.jpg'
@@ -49,9 +51,10 @@ export { default as CanTiu22 } from './Can Tiu 22.jpg'
 export { default as CanTiuBookings } from './bookings.json'
 
 export const CanTiuPropertyDetails = {
+  "name": "cantiu",
   "blurb": "Just two minutes walking from the central square of Santanyi",
   "email": "antonirigo@gmail.com",
-  "floorplan": "unavailable",
+  "floorplan": CanTiuFloorplan,
   "details": CanTiuInfo,
   "svgs": {
     "information": [
