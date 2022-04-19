@@ -37,8 +37,7 @@ const StyledBurger = styled.div`
   }
 `
 
-const Burger = ({ backgroundColor, changeColor, backgroundHeroImage }) => {
-  const [open, setOpen] = useState(false)
+const Burger = ({ backgroundColor, changeColor, backgroundHeroImage, setOpen, open }) => {
 
   return (
     <>

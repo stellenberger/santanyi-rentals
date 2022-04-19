@@ -30,6 +30,14 @@
         margin: auto;
       }
     }
+    .viewProperties {
+      @extend .explore;
+      display: none;
+      margin-bottom: 20px;
+      @media (max-width: $medium) {
+        display: block;
+      }
+    }
     .arrowDown {
       border: solid white;
       width: 50px;

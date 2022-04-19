@@ -20,6 +20,7 @@ import ReactGa from 'react-ga'
 
 function App() {
   const [background, setBackground] = useState(null)
+  const [open, setOpen] = useState(false)
   const backgroundHeroImage = {
     backgroundImage: `url(${CalaLlombards})`,
     backgroundRepeat: 'no-repeat',
@@ -64,9 +65,9 @@ function App() {
   return (
     <div className={classes.App} style={background}>
       <BrowserRouter>
-        <TopNavigation changeColor={changeColor} backgroundColor={backgroundColor} backgroundHeroImage={backgroundHeroImage} />
+        <TopNavigation changeColor={changeColor} backgroundColor={backgroundColor} backgroundHeroImage={backgroundHeroImage} setOpen={setOpen} open={open} />
         <Routes>
-          <Route exact path='/' element={<Landing/>} />
+          <Route exact path='/' element={<Landing setOpen={setOpen} open={open}/>} />
           <Route exact path='/:id' element={<Property changeColor={changeColor} backgroundHeroImage={backgroundHeroImage} property={PropertyBundles.filter(p => p.id == window.location.pathname.split('/')[1])[0]} />} />
         </Routes>
       </BrowserRouter>
