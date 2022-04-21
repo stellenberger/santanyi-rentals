@@ -1,24 +1,32 @@
 @import '../../utils/variables';
 
 .footerContainer {
-  background-color: rgba(0,0,0,0.65);
   font-family: $site-font;
   font-weight: bold;
-  border-top: 3px solid black;
-  display: flex;
   width: 100vw;
-  height: 15vh;
+  font-size: 10px;
   bottom: 0;
   position: fixed;
-  margin-top: 50px;
   z-index: 5;
+  @media (max-width: $medium) {
+    position:relative;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  color: black;
   .footerContent {
     width: $normal-component-width;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    letter-spacing: 4px;
     @media (max-width: $medium) {
       display: block;
+      letter-spacing: 2px;
+      background-color: white;
+      padding: 25px;
     }
     div {
       display: flex;
@@ -40,7 +48,6 @@
         }
         @media (max-width: $medium) {
           font-size: 15px;
-          margin: auto 10px auto 10px;
         }
       }
     }

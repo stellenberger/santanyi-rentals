@@ -70,6 +70,7 @@ function App() {
           <Route exact path='/' element={<Landing setOpen={setOpen} open={open}/>} />
           <Route exact path='/:id' element={<Property changeColor={changeColor} backgroundHeroImage={backgroundHeroImage} property={PropertyBundles.filter(p => p.id == window.location.pathname.split('/')[1])[0]} />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

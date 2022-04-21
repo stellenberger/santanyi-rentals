@@ -1,24 +1,15 @@
 import React from 'react'
 import classes from './Footer.module.scss';
-import { 
-  GrMail
-} from 'react-icons/gr';
-import { 
-  BsFillTelephoneFill
-} from 'react-icons/bs';
 
 export default function Footer() {
+  const getYear = () => {
+    let d = new Date()
+    return d.getFullYear()
+  }
   return (
     <div className={classes.footerContainer}>
       <div className={classes.footerContent}>
-        <div>
-          <GrMail/>
-          <a href = "mailto: contact@santanyiholidayrentals.com">contact@santanyiholidayrentals.com</a>
-        </div>
-        <div>
-          <BsFillTelephoneFill/>
-          <a href="tel:+31 4988 0992 2883">+31 4988 0992 2883</a>
-        </div>
+        <p>&copy; Copyright Santanyi Holiday Rentals {getYear()} | Website designed and authored by <a href="https://www.stephanellenberger.dev" target="_blank">Stephan Ellenberger</a></p>
       </div>
     </div>
   )
