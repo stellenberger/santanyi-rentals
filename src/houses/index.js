@@ -25,7 +25,8 @@ import {
   SEstadors21, 
   SEstadors22,
   SEstadorsPropertyDetails,
-  SEstadorsBookings
+  SEstadorsBookings,
+  SestadorsPrices
 } from './S\'EstadorsProperty';
 
 // Import Can Sabater property photos
@@ -54,6 +55,7 @@ import {
   CanSabater23,
   CanSabaterPropertyDetails,
   CanSabaterBookings,
+  CanSabaterPrices
 } from './CanSabaterProperty';
 
 // Import Can Tiu property photos
@@ -81,7 +83,8 @@ import {
   CanTiu21, 
   CanTiu22,
   CanTiuPropertyDetails,
-  CanTiuBookings
+  CanTiuBookings,
+  CanTiuPrices
 } from './CanTiuProperty';
 
 // Import Embarcadero property photos
@@ -113,7 +116,8 @@ import {
   Embarcadero24,
   Embarcadero25,
   EmbarcaderoPropertyDetails,
-  EmbarcaderoBookings
+  EmbarcaderoBookings,
+  EmbarcaderoPrices
 } from './EmbarcaderoProperty';
 
 // Export Can Sabater
@@ -155,6 +159,7 @@ export const CanSabaterPropertyDetailsBundle = {
   ],
   "detailsComponent": <PropertyDetails propertyInformation={CanSabaterPropertyDetails}/>,
   "bookings": CanSabaterBookings,
+  "prices": CanSabaterPrices,
   "location": "Santanyi",
 }
 
@@ -199,6 +204,7 @@ export const EmbarcaderoPropertyDetailsBundle = {
   ],
   "detailsComponent": <PropertyDetails propertyInformation={EmbarcaderoPropertyDetails}/>,
   "bookings": EmbarcaderoBookings,
+  "prices": EmbarcaderoPrices,
   "location": "Cala Llombards",
 }
 
@@ -239,6 +245,7 @@ export const SEstadorsPropertyDetailsBundle = {
   ],
   "detailsComponent": <PropertyDetails propertyInformation={SEstadorsPropertyDetails}/>,
   "bookings": SEstadorsBookings,
+  "prices": SestadorsPrices,
   "location": "Santanyi",
 }
 
@@ -281,6 +288,7 @@ export const CanTiuPropertyDetailsBundle = {
   ],
   "detailsComponent": <PropertyDetails propertyInformation={CanTiuPropertyDetails}/>,
   "bookings": CanTiuBookings,
+  "prices": CanTiuPrices,
   "location": "Santanyi",
 }
 

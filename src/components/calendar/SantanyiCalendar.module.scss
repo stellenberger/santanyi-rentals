@@ -70,9 +70,24 @@
       margin-bottom: 5px;
       font-size:12px;
       color: black;
-      height: 35px;
+      height: 40px;
       font-family: $site-font;
       font-weight: bold;
+    }
+  }
+
+  .dateAndPriceContainer {
+    display: flex;
+    flex-direction: column;
+    .date {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .price {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
     }
   }
 }

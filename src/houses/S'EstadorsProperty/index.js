@@ -49,6 +49,21 @@ export { default as SEstadors22 } from './S\'Estadors 22.jpg'
 
 export { default as SEstadorsBookings } from './bookings.json'
 
+export const SestadorsPrices = {
+  "January": 120,
+  "February": 120,
+  "March": 120,
+  "April": 120,
+  "May": 120,
+  "June": 150,
+  "July": 180,
+  "August": 180,
+  "September": 150,
+  "October": 120,
+  "November": 120,
+  "December": 120,
+}
+
 export const SEstadorsPropertyDetails = {
   "name": "sestadors",
   "blurb": "Between the town and the country",

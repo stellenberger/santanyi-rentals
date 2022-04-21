@@ -48,6 +48,21 @@ export { default as CanSabater23 } from './Can Sabater 23.jpg'
 
 export { default as CanSabaterBookings } from './bookings.json'
 
+export const CanSabaterPrices = {
+  "January": 150,
+  "February": 150,
+  "March": 150,
+  "April": 150,
+  "May": 180,
+  "June": 210,
+  "July": 240,
+  "August": 240,
+  "September": 210,
+  "October": 180,
+  "November": 150,
+  "December": 150,
+}
+
 export const CanSabaterPropertyDetails = {
   "name": "cansabater",
   "blurb": "5 minutes from Mondrago National Park",

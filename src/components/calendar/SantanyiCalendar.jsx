@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import classes from './SantanyiCalendar.module.scss'
+import { 
+  BiEuro,
+} from 'react-icons/bi';
 
-export default function SantanyiCalendar({ bookings }) {
+export default function SantanyiCalendar({ bookings, prices }) {
   const months = [
     "January",
     "February",
@@ -117,7 +120,16 @@ export default function SantanyiCalendar({ bookings }) {
 
       <ul className={classes.days}>
         { precedingDays.map((day, index) => <li key={index}></li>) }
-        { totalDateRange && totalDateRange.map((date, index) => <li key={index} style={getDateStyling(date)}><span>{date}</span></li>)}
+        { 
+          totalDateRange && totalDateRange.map((date, index) => 
+            <li key={index} style={getDateStyling(date)}>
+              <div class={classes.dateAndPriceContainer}>
+                <span class={classes.date}>{date}</span>
+                <span class={classes.price}><BiEuro/>{prices[getMonthName()]}</span>
+              </div>
+            </li>
+          )
+        }
       </ul>
     </div>
   )

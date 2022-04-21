@@ -50,6 +50,20 @@ export { default as Embarcadero24 } from './Embarcadero 24.jpg'
 export { default as Embarcadero25 } from './Embarcadero 25.jpg'
 
 export { default as EmbarcaderoBookings } from './bookings.json'
+export const EmbarcaderoPrices = {
+  "January": "N/A",
+  "February": "N/A",
+  "March": "N/A",
+  "April": 300,
+  "May": 300,
+  "June": 330,
+  "July": 330,
+  "August": 330,
+  "September": 320,
+  "October": 300,
+  "November": 290,
+  "December": "N/A",
+}
 
 export { default as EmbarcaderoFloorplan } from './embarcaderoFloorplan.pdf'
 

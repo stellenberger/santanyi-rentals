@@ -50,6 +50,21 @@ export { default as CanTiu22 } from './Can Tiu 22.jpg'
 
 export { default as CanTiuBookings } from './bookings.json'
 
+export const CanTiuPrices = {
+  "January": 100,
+  "February": 100,
+  "March": 100,
+  "April": 100,
+  "May": 120,
+  "June": 140,
+  "July": 160,
+  "August": 160,
+  "September": 140,
+  "October": 120,
+  "November": 100,
+  "December": 100,
+}
+
 export const CanTiuPropertyDetails = {
   "name": "cantiu",
   "blurb": "Just two minutes walking from the central square of Santanyi",

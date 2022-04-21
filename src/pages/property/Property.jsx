@@ -39,7 +39,7 @@ export default function Property({ changeColor, backgroundHeroImage, property })
           </CarouselProvider>
         </div>
         <div className={classes.calendarContainer} >
-          <SantanyiCalendar bookings={property && property.bookings}/>
+          <SantanyiCalendar bookings={property && property.bookings} prices={property && property.prices}/>
         </div>
       </div>
     </div>
