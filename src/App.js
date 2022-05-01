@@ -56,7 +56,7 @@ function App() {
 
   useEffect(() => {
     styling()
-    ReactGa.initialize('PUT YOUR GOOGLE ANALYTICS CODE HERE')
+    ReactGa.initialize('G-WYVJFQDXY4')
 
     // to report page view
     ReactGa.pageview(window.location.pathname + window.location.search)
