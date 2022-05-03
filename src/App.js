@@ -16,7 +16,7 @@ import {
   PropertyBundles
  } from './houses';
 
-import ReactGa from 'react-ga'
+import ReactGa from 'react-ga4'
 
 function App() {
   const [background, setBackground] = useState(null)
