@@ -56,10 +56,16 @@ function App() {
 
   useEffect(() => {
     styling()
-    ReactGa.initialize('G-WYVJFQDXY4')
+    ReactGa.initialize(
+      [
+        {
+          trackingId: 'G-WYVJFQDXY4'
+        }
+      ]
+    )
 
     // to report page view
-    ReactGa.pageview(window.location.pathname + window.location.search)
+    ReactGa.send({ hitType: "pageview", page: window.location.pathname + window.location.search})
   }, [])
 
   return (
