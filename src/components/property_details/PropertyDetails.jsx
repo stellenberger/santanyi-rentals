@@ -4,6 +4,7 @@ import classes from './PropertyDetails.module.scss'
 export default function PropertyDetails({ propertyInformation }) {
   return (
     <div className={classes.propertyContainer}>
+      { propertyInformation.tags }
       <div className={classes.about}>
         <i>“{propertyInformation.blurb}”</i>
       </div>

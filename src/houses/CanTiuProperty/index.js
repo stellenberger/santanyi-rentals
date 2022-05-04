@@ -1,7 +1,7 @@
 import React from 'react'
+import { SeoMetaTags } from '../../components';
 import { 
   FaUserAlt,
-  FaSwimmingPool,
   FaWifi,
   FaPlaneArrival,
   FaUmbrellaBeach,
@@ -66,6 +66,11 @@ export const CanTiuPrices = {
 }
 
 export const CanTiuPropertyDetails = {
+  "tags": <SeoMetaTags 
+    title="Santanyi Holiday Rentals - Can Tiu"
+    description="Rent Can Tiu with Santanyi Holiday Rentals, and stay just a stones throw from central Santanyi"
+    ogTitle="Santanyi Holiday Rentals - Can Tiu"
+  />,
   "name": "cantiu",
   "blurb": "Just two minutes walking from the central square of Santanyi",
   "email": "antonirigo@gmail.com",

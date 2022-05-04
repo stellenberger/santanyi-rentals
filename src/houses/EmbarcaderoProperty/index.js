@@ -1,4 +1,5 @@
 import React from 'react'
+import { SeoMetaTags } from '../../components';
 import { 
   FaUserAlt,
   FaSwimmingPool,
@@ -68,6 +69,11 @@ export const EmbarcaderoPrices = {
 export { default as EmbarcaderoFloorplan } from './embarcaderoFloorplan.pdf'
 
 export const EmbarcaderoPropertyDetails = {
+  "tags": <SeoMetaTags 
+    title="Santanyi Holiday Rentals - Embarcadero"
+    description="Rent Embarcadero with Santanyi Holiday Rentals, a 30 second walk to the beach of Cala Llombards"
+    ogTitle="Santanyi Holiday Rentals - Embarcadero"
+  />,
   "name": "embarcadero",
   "blurb": "A stones throw from Cala Llombards beach",
   "email": "lauraellenberger63@gmail.com",

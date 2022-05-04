@@ -1,4 +1,5 @@
 import React from 'react'
+import { SeoMetaTags } from '../../components';
 import { 
   FaUserAlt,
   FaSwimmingPool,
@@ -65,6 +66,11 @@ export const SestadorsPrices = {
 }
 
 export const SEstadorsPropertyDetails = {
+  "tags": <SeoMetaTags 
+    title="Santanyi Holiday Rentals - S'Estadors"
+    description="Rent S'Estadors with Santanyi Holiday Rentals, in the South East of Mallorca"
+    ogTitle="Santanyi Holiday Rentals - S'Estadors"
+  />,
   "name": "sestadors",
   "blurb": "Between the town and the country",
   "email": "antonirigo@gmail.com",

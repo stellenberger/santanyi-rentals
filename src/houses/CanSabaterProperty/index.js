@@ -1,4 +1,5 @@
 import React from 'react'
+import { SeoMetaTags } from '../../components';
 import { 
   FaUserAlt,
   FaSwimmingPool,
@@ -64,6 +65,11 @@ export const CanSabaterPrices = {
 }
 
 export const CanSabaterPropertyDetails = {
+  "tags": <SeoMetaTags 
+    title="Santanyi Holiday Rentals - Can Sabater"
+    description="Rent Can Sabater with Santanyi Holiday Rentals, and explore Mondrago National Park just around the corner"
+    ogTitle="Santanyi Holiday Rentals - Can Sabater"
+  />,
   "name": "cansabater",
   "blurb": "5 minutes from Mondrago National Park",
   "email": "antonirigo@gmail.com",
